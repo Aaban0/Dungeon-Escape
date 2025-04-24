@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/bat.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/Heart.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/mummy.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/potion_2_ruby.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/tempBackground.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/user.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/Wall.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/Images/werewolf.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/Arial.spritefont</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/BackgroundShader.fx</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/ComicSans.spritefont</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/DefaultFont.spritefont</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/GrayscaleEffect.fx</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/Pixel.png</File>
+    <File>C:/Users/aaban/OneDrive - Dundee and Angus College/Computing Games Development HND/OOP Assessment/BlankStarterProject/StudentProject/Content/misc/SpriteFill.fx</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
