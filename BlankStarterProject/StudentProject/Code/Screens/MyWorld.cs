@@ -3,9 +3,12 @@
     public class MyWorld : Screen
     {
         private Player _player;
+
         private Wolf _wolf;
         private Mummy _mummy;
         private Bat _bat;
+
+        private Potion _potion;
 
         private Health _health;
         private Text screenPoisition;
@@ -32,6 +35,9 @@
             _player = new Player();
             AddObject(_player, 850, 400);
 
+            _potion = new Potion("Health Potion", 25, 0);
+            AddObject(_potion, 500, 500);
+
             _health = new Health();
             AddObject(_health, 40, 80);
 
@@ -46,7 +52,7 @@
             base.Update(deltaTime);
             // TODO: Add your Screen update code below here
 
-            SceneCamera();
+            //SceneCamera();
 
             if (_player.Death() == true)
             {
@@ -59,12 +65,6 @@
 
         private void SceneCamera()
         {
-            /*_position = new Vector2(_player.GetX(), _player.GetY());
-            Camera.Instance.LookAt(_position);*/
-
-            _wolfPosition = new Vector2(_wolf.GetX(), _wolf.GetY());
-
-
             _position = new Vector2(_player.GetX(), _player.GetY());
 
             Camera.Instance.LookAt(_position);
