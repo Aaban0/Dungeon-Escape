@@ -6,24 +6,22 @@ using System.Threading.Tasks;
 
 namespace StudentProject.Code.GameObjects
 {
-    internal class Potion : InventoryItem
+    internal class MegaPotion : InventoryItem
     {
-        public Potion() : base()
+        public MegaPotion() : base() 
         {
-            HealPoints = 1;
-
-            SetSprite("potion_2_ruby");
+            HealPoints = 2;
+            SetSprite("potion_gold");
         }
-
-        public Potion(string name, int healPoints, int damagePoints)
+        public MegaPotion(string name, int healPoints, int damagePoints)
         {
             HealPoints = healPoints;
-            SetSprite("potion_2_ruby");
+            SetSprite("potion_gold");
         }
 
         public override void Update(float deltaTime)
         {
-            
+
         }
     }
 }

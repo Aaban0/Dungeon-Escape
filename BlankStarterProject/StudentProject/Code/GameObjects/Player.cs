@@ -23,10 +23,26 @@ namespace StudentProject.Code.GameObjects
 
         public override void Update(float deltaTime)
         {
+            ItemCheck();
+
             CheckForObstacles();
             HandleInputs();
 
             PlayerCollision();
+        }
+
+        public void ItemPickUp(InventoryItem item)
+        {
+
+        }
+
+        private void ItemCheck()
+        {
+            InventoryItem inventoryItem = (InventoryItem)GetOneIntersectingObject<InventoryItem>();
+            if (inventoryItem != null && GameInput.IsKeyPressed("e"))
+            {
+                
+            }
         }
 
         private void CheckForObstacles()

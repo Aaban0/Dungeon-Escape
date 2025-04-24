@@ -52,7 +52,7 @@
             base.Update(deltaTime);
             // TODO: Add your Screen update code below here
 
-            //SceneCamera();
+            SceneCamera();
 
             if (_player.Death() == true)
             {

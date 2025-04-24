@@ -94,3 +94,6 @@ C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\Stud
 C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\StudentProject.pdb
 C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\StudentProject.genruntimeconfig.cache
 C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\ref\StudentProject.dll
+C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\potion_gold.xnb
+C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\potion_puce.xnb
+C:\Users\aaban\OneDrive\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\inventory.xnb
