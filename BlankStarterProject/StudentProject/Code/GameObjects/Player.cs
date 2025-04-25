@@ -101,7 +101,7 @@ namespace StudentProject.Code.GameObjects
 
         private void HandleInputs()
         {
-            if (GameInput.IsKeyPressed("q"))
+            if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D1))
             {
                 //prevents program break if there are no items 
                 if (currentItem != null)
@@ -109,7 +109,19 @@ namespace StudentProject.Code.GameObjects
                     UseItem();
                 }
             }
-
+            if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D2))
+            {
+                currentItem = inventoryManager.GetItem2();
+                //prevents program break if there are no items 
+                if (currentItem != null && inventoryManager.currentItem == 1)
+                {
+                    //edit this if statement
+                    //test 1 potion at a time 
+                    //test 2 potions then 2, 1
+                    //test 2 potions then 1, 2
+                    UseItem();
+                }
+            }
 
 
             if (GameInput.IsKeyPressed("W"))

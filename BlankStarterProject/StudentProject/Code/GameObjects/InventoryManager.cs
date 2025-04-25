@@ -64,9 +64,30 @@ namespace StudentProject.Code.GameObjects
             return removed;
         }
 
+        public InventoryItem GetItem2()
+        {
+            for (int i = 0; i < InventoryItems.Length; i++)
+            {
+                currentItem = 1;
+            }
+            return InventoryItems[currentItem];
+        }
+
+        // Get the previous item in the inventory
+        public InventoryItem GetPreviousItem()
+        {
+            currentItem--;
+
+            if (currentItem < 0)
+                currentItem = - 1;
+
+            return InventoryItems[currentItem];
+        }
+
         public InventoryItem TakeItem(int itemIndex)
         {
             return InventoryItems[itemIndex];
         }
+
     }
 }
