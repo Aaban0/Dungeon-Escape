@@ -9,6 +9,7 @@
         private Bat _bat;
 
         private Potion _potion;
+        private MegaPotion _mPotion;
 
         private Health _health;
         private InventoryManager inventoryManager;
@@ -36,8 +37,11 @@
             _player = new Player();
             AddObject(_player, 850, 400);
 
-            _potion = new Potion("Health Potion", 25, 0);
+            _potion = new Potion("Health Potion", 1, 0);
             AddObject(_potion, 500, 500);
+
+            _mPotion = new MegaPotion("Health Potion", 2, 0);
+            AddObject(_mPotion, 550, 550);
 
             _health = new Health();
             AddObject(_health, 40, 50);

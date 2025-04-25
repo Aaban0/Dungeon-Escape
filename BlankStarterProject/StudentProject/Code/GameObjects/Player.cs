@@ -61,6 +61,16 @@ namespace StudentProject.Code.GameObjects
             }
         }
 
+        public void UseItem()
+        {
+            InventoryItem potion = (InventoryItem)currentItem;
+            _lives += potion.HealPoints;
+            currentItem = null;
+            inventoryManager.RemoveItem(potion);
+            potion.GetSprite().SetInWorldSpace(true);
+            potion.SetVisible(false);
+        }
+
         private void CheckForObstacles()
         {
             if (IsTouching<Wall>())
@@ -91,6 +101,17 @@ namespace StudentProject.Code.GameObjects
 
         private void HandleInputs()
         {
+            if (GameInput.IsKeyPressed("q"))
+            {
+                //prevents program break if there are no items 
+                if (currentItem != null)
+                {
+                    UseItem();
+                }
+            }
+
+
+
             if (GameInput.IsKeyPressed("W"))
             {
                 SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
