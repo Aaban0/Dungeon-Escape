@@ -12,8 +12,14 @@ namespace StudentProject.Code.GameObjects
         public bool death {  get; set; }
         private int _speed { get; set; }
 
+        public InventoryManager inventoryManager { get; set; }
+        public InventoryItem currentItem{ get; set; }
+
         public Player()
         {
+            inventoryManager = new InventoryManager();
+            currentItem = null;
+
             //Sets up players inital sprite
             SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
             death = false;
@@ -30,18 +36,28 @@ namespace StudentProject.Code.GameObjects
 
             PlayerCollision();
         }
-
-        public void ItemPickUp(InventoryItem item)
-        {
-
-        }
-
         private void ItemCheck()
         {
             InventoryItem inventoryItem = (InventoryItem)GetOneIntersectingObject<InventoryItem>();
-            if (inventoryItem != null && GameInput.IsKeyPressed("e"))
+            if (inventoryItem is InventoryItem)
             {
-                
+                if (GameInput.IsKeyPressed("e"))
+                {
+                    InventoryItem ii = (InventoryItem)inventoryItem;
+                    ItemPickUp(ii);
+                }
+            }
+        }
+
+        public void ItemPickUp(InventoryItem item)
+        {
+            if (inventoryManager.AddItem(item))
+            {
+                //item.SetVisible(false);
+                item.GetSprite().SetInWorldSpace(false);
+                item.GetSprite().SetScale(2, 2);
+                item.SetPosition(new Vector2(1557.5f, 57));
+                currentItem = item;
             }
         }
 

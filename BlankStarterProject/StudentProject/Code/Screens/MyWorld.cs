@@ -11,17 +11,18 @@
         private Potion _potion;
 
         private Health _health;
-        private Text screenPoisition;
+        private InventoryManager inventoryManager;
 
         private Vector2 _position;
-        private Vector2 _wolfPosition;
 
         public override void Start(Core core)
         {
             base.Start(core);
             // TODO: Add your Screen start code below here
             //SetBackground("tempBackground", BackgroundType.FullScroll);
-            
+
+            inventoryManager = new InventoryManager();
+            AddObject(inventoryManager, 1550, 50);
 
             _wolf = new Wolf();
             AddObject(_wolf, 200, 800);
@@ -39,10 +40,8 @@
             AddObject(_potion, 500, 500);
 
             _health = new Health();
-            AddObject(_health, 40, 80);
+            AddObject(_health, 40, 50);
 
-            screenPoisition = new Text("", Colour.White);
-            AddText(screenPoisition, 30, 20);
 
             BuildWalls();
         }
@@ -60,7 +59,6 @@
             }
 
             _health.SetHealth(_player.Lives());
-            screenPoisition.SetMessage("Position Y:" + _wolf.GetY().ToString());
         }
 
         private void SceneCamera()

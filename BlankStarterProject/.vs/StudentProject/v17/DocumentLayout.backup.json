@@ -1,42 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\",
+  "WorkspaceRootPath": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\screens\\myworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\screens\\myworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\bat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\bat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\mummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\mummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\onedrive - dundee and angus college\\computing games development hnd\\oop assessment\\blankstarterproject\\studentproject\\code\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\screens\\myworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\screens\\myworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\poisonpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\poisonpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\megapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\megapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MyWorld.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\Screens\\MyWorld.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\Screens\\MyWorld.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\Screens\\MyWorld.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\Screens\\MyWorld.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\Screens\\MyWorld.cs",
               "RelativeToolTip": "StudentProject\\Code\\Screens\\MyWorld.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwEYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T08:41:04.922Z",
               "IsPinned": true,
@@ -64,106 +60,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Wall.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Wall.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Wall.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Wall.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Wall.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Health.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Health.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Health.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T17:59:35.785Z",
+              "WhenOpened": "2025-04-25T08:24:47.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Health.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Health.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Health.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Health.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Health.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCkAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "InventoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\InventoryManager.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\InventoryManager.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\InventoryManager.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\InventoryManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T16:54:24.05Z",
+              "WhenOpened": "2025-04-25T07:46:29.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\InventoryItem.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\InventoryItem.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:06:54.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Player.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Player.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Player.cs*",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Player.cs*",
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Player.cs*",
-              "ViewState": "AgIAAGEAAAAAAAAAAADwv3kAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAxwDoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T08:39:13.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bat.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Bat.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Bat.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Bat.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Bat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:55:41.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Wolf.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Wolf.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Wolf.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Wolf.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Wolf.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T14:52:12.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mummy.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Mummy.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Mummy.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Mummy.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Mummy.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T14:52:19.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Enemy.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Enemy.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Enemy.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Enemy.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T09:47:03.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Item.cs",
-              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Item.cs",
-              "ToolTip": "C:\\Users\\aaban\\OneDrive - Dundee and Angus College\\Computing Games Development HND\\OOP Assessment\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Item.cs",
-              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Item.cs",
+              "Title": "Potion.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Potion.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Potion.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Potion.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Potion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T09:47:11.857Z",
+              "WhenOpened": "2025-04-25T08:07:04.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PoisonPotion.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\PoisonPotion.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\PoisonPotion.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\PoisonPotion.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\PoisonPotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:07:02.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MegaPotion.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\MegaPotion.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\MegaPotion.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\MegaPotion.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\MegaPotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:07:01.583Z",
               "EditorCaption": ""
             }
           ]

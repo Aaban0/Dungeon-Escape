@@ -40,9 +40,33 @@ namespace StudentProject.Code.GameObjects
                 InventoryItems[currentItem] = item;
                 currentItem++;
                 itemNum++;
+                added = true;
             }
 
             return added;
+        }
+
+        public bool RemoveItem(InventoryItem item)
+        {
+            bool removed = false;
+
+            for (int i = 0; i < InventoryItems.Length; i++)
+            {
+                if (InventoryItems[i] == item)
+                {
+                    InventoryItems[i] = null;
+                    itemNum--;
+                    removed = true;
+                    break;
+                }
+            }
+
+            return removed;
+        }
+
+        public InventoryItem TakeItem(int itemIndex)
+        {
+            return InventoryItems[itemIndex];
         }
     }
 }
