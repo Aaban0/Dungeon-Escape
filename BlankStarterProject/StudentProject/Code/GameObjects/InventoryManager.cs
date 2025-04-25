@@ -22,7 +22,6 @@ namespace StudentProject.Code.GameObjects
             SetSprite("inventory");
             GetSprite().SetInWorldSpace(false);
             GetSprite().SetScale(2, 2);
-
             SetVisible(true);
         }
 
@@ -37,8 +36,8 @@ namespace StudentProject.Code.GameObjects
 
             if (itemNum < CAPACITY)
             {
-                InventoryItems[currentItem] = item;
-                currentItem++;
+                InventoryItems[itemNum] = item;
+                //currentItem++;
                 itemNum++;
                 added = true;
             }
@@ -60,16 +59,19 @@ namespace StudentProject.Code.GameObjects
                     break;
                 }
             }
-
             return removed;
         }
 
         public InventoryItem GetItem2()
         {
-            for (int i = 0; i < InventoryItems.Length; i++)
+            /*for (int i = 0; i < InventoryItems.Length; i++)
             {
-                currentItem = 1;
-            }
+                if (InventoryItems.Length > 1)
+                {
+                    InventoryItems[i] = null;
+                    currentItem = 1;
+                }
+            }*/
             return InventoryItems[currentItem];
         }
 
