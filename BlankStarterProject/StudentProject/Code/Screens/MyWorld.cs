@@ -10,6 +10,7 @@
 
         private Potion _potion;
         private MegaPotion _mPotion;
+        private PoisonPotion _pPotion;
 
         private Health _health;
         private InventoryManager inventoryManager;
@@ -42,6 +43,9 @@
 
             _mPotion = new MegaPotion("Health Potion", 2, 0);
             AddObject(_mPotion, 550, 550);
+
+            _pPotion = new PoisonPotion("Poison Potion", 0, 1);
+            AddObject(_pPotion, 600, 600);
 
             _health = new Health();
             AddObject(_health, 40, 50);

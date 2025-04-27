@@ -79,6 +79,14 @@ namespace StudentProject.Code.GameObjects
                 {
                     item.SetPosition(new Vector2(1557.5f + 75, 57));
                 }
+                if (inventoryManager.itemNum > 2)
+                {
+                    item.SetPosition(new Vector2(1557.5f + 150, 57));
+                }
+                if (inventoryManager.itemNum > 3)
+                {
+                    item.SetPosition(new Vector2(1557.5f + 225, 57));
+                }
             }
         }
 
@@ -86,6 +94,7 @@ namespace StudentProject.Code.GameObjects
         {
             InventoryItem potion = (InventoryItem)currentItem1;
             _lives += potion.HealPoints;
+            _lives -= potion.DamagePoints;
             currentItem1 = null;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
@@ -130,7 +139,7 @@ namespace StudentProject.Code.GameObjects
                 if (currentItem1 is InventoryItem || currentItem1 != null)
                 {
                     UseItem1();
-                    currentItem1 = inventoryManager.InventoryItems[0];
+                    //currentItem1 = inventoryManager.InventoryItems[0];
                 }
             }
 
