@@ -9,6 +9,7 @@
         private Bat _bat;
 
         private Potion _potion;
+        private Potion _potion2;
         private MegaPotion _mPotion;
         private PoisonPotion _pPotion;
 
@@ -37,6 +38,9 @@
 
             _player = new Player();
             AddObject(_player, 850, 400);
+
+            _potion2 = new Potion("Health Potion", 1, 0);
+            AddObject(_potion2, 450, 450);
 
             _potion = new Potion("Health Potion", 1, 0);
             AddObject(_potion, 500, 500);

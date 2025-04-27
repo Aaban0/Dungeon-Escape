@@ -15,12 +15,14 @@ namespace StudentProject.Code.GameObjects
         public InventoryManager inventoryManager { get; set; }
         public InventoryItem currentItem1 { get; set; }
         public InventoryItem currentItem2 { get; set; }
+        public InventoryItem currentItem3 { get; set; }
 
         public Player()
         {
             inventoryManager = new InventoryManager();
             currentItem1 = null;
             currentItem2 = null;
+            currentItem3 = null;
 
             //Sets up players inital sprite
             SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
@@ -76,6 +78,10 @@ namespace StudentProject.Code.GameObjects
                     {
                         currentItem2 = item;
                     }
+                    if (inventoryManager.InventoryItems[2] == item)
+                    {
+                        currentItem3 = item;
+                    }
                 }
 
                 /*currentItem1 = item;
@@ -115,7 +121,20 @@ namespace StudentProject.Code.GameObjects
             _lives += potion.HealPoints;
             _lives -= potion.DamagePoints;
             currentItem2 = null;
-            //inventoryManager.itemNum--;
+            inventoryManager.itemNum--;
+            inventoryManager.RemoveItem(potion);
+            potion.GetSprite().SetInWorldSpace(true);
+
+            potion.SetActive(false);
+            GetScreen().RemoveObject(potion);
+        }
+        public void UseItem3()
+        {
+            InventoryItem potion = (InventoryItem)currentItem3;
+            _lives += potion.HealPoints;
+            _lives -= potion.DamagePoints;
+            currentItem3 = null;
+            inventoryManager.itemNum--;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
@@ -168,6 +187,14 @@ namespace StudentProject.Code.GameObjects
                 if (currentItem2 is InventoryItem || currentItem2 != null)
                 {
                     UseItem2();
+                }
+            }
+            if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D3))
+            {
+                //prevents program break if there are no items
+                if (currentItem3 is InventoryItem || currentItem3 != null)
+                {
+                    UseItem3();
                 }
             }
 
