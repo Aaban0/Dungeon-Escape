@@ -37,7 +37,7 @@ namespace StudentProject.Code.GameObjects
             if (itemNum < CAPACITY)
             {
                 InventoryItems[itemNum] = item;
-                //currentItem++;
+                currentItem++;
                 itemNum++;
                 added = true;
             }

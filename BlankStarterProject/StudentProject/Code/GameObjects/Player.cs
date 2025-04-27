@@ -96,6 +96,7 @@ namespace StudentProject.Code.GameObjects
             _lives += potion.HealPoints;
             _lives -= potion.DamagePoints;
             currentItem1 = null;
+            inventoryManager.itemNum--;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
