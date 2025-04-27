@@ -40,6 +40,7 @@ namespace StudentProject.Code.GameObjects
             CheckForObstacles();
             HandleInputs();
 
+            EnemyAttack();
             PlayerCollision();
         }
         private void ItemCheck()
@@ -47,7 +48,7 @@ namespace StudentProject.Code.GameObjects
             InventoryItem inventoryItem = (InventoryItem)GetOneIntersectingObject<InventoryItem>();
             if (inventoryItem is InventoryItem)
             {
-                if (GameInput.IsKeyPressed("e"))
+                if (GameInput.IsKeyPressed("q"))
                 {
                     InventoryItem ii = (InventoryItem)inventoryItem;
                     ItemPickUp(ii);
@@ -158,6 +159,18 @@ namespace StudentProject.Code.GameObjects
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
+        }
+
+        private void EnemyAttack()
+        {
+            Enemy enemy = (Enemy)GetOneIntersectingObject<Enemy>();
+            if (enemy is Enemy)
+            {
+                if (GameInput.IsKeyPressed("e"))
+                {
+                    GetScreen().RemoveObject(enemy);
+                }
+            }
         }
 
         private void CheckForObstacles()
