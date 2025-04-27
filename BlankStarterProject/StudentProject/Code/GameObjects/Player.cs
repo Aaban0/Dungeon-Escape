@@ -16,6 +16,7 @@ namespace StudentProject.Code.GameObjects
         public InventoryItem currentItem1 { get; set; }
         public InventoryItem currentItem2 { get; set; }
         public InventoryItem currentItem3 { get; set; }
+        public InventoryItem currentItem4 { get; set; }
 
         public Player()
         {
@@ -23,6 +24,7 @@ namespace StudentProject.Code.GameObjects
             currentItem1 = null;
             currentItem2 = null;
             currentItem3 = null;
+            currentItem4 = null;
 
             //Sets up players inital sprite
             SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
@@ -82,6 +84,10 @@ namespace StudentProject.Code.GameObjects
                     {
                         currentItem3 = item;
                     }
+                    if (inventoryManager.InventoryItems[3] == item)
+                    {
+                        currentItem4 = item;
+                    }
                 }
 
                 /*currentItem1 = item;
@@ -108,7 +114,7 @@ namespace StudentProject.Code.GameObjects
             _lives += potion.HealPoints;
             _lives -= potion.DamagePoints;
             currentItem1 = null;
-            inventoryManager.itemNum = 0; ;
+            inventoryManager.itemNum = 0;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
@@ -121,7 +127,7 @@ namespace StudentProject.Code.GameObjects
             _lives += potion.HealPoints;
             _lives -= potion.DamagePoints;
             currentItem2 = null;
-            inventoryManager.itemNum--;
+            inventoryManager.itemNum = 1;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
@@ -135,6 +141,18 @@ namespace StudentProject.Code.GameObjects
             _lives -= potion.DamagePoints;
             currentItem3 = null;
             inventoryManager.itemNum--;
+            inventoryManager.RemoveItem(potion);
+            potion.GetSprite().SetInWorldSpace(true);
+
+            potion.SetActive(false);
+            GetScreen().RemoveObject(potion);
+        }
+        public void UseItem4()
+        {
+            InventoryItem potion = (InventoryItem)currentItem4;
+            _lives += potion.HealPoints;
+            _lives -= potion.DamagePoints;
+            currentItem4 = null;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
@@ -195,6 +213,14 @@ namespace StudentProject.Code.GameObjects
                 if (currentItem3 is InventoryItem || currentItem3 != null)
                 {
                     UseItem3();
+                }
+            }
+            if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D4))
+            {
+                //prevents program break if there are no items
+                if (currentItem4 is InventoryItem || currentItem4 != null)
+                {
+                    UseItem4();
                 }
             }
 
