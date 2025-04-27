@@ -37,7 +37,7 @@ namespace StudentProject.Code.GameObjects
             if (itemNum < CAPACITY)
             {
                 InventoryItems[itemNum] = item;
-                currentItem++;
+                //currentItem++;
                 itemNum++;
                 added = true;
             }
@@ -54,7 +54,7 @@ namespace StudentProject.Code.GameObjects
                 if (InventoryItems[i] == item)
                 {
                     InventoryItems[i] = null;
-                    itemNum--;
+                    //itemNum--;
                     removed = true;
                     break;
                 }

@@ -14,11 +14,13 @@ namespace StudentProject.Code.GameObjects
 
         public InventoryManager inventoryManager { get; set; }
         public InventoryItem currentItem1 { get; set; }
+        public InventoryItem currentItem2 { get; set; }
 
         public Player()
         {
             inventoryManager = new InventoryManager();
             currentItem1 = null;
+            currentItem2 = null;
 
             //Sets up players inital sprite
             SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
@@ -70,6 +72,10 @@ namespace StudentProject.Code.GameObjects
                     {
                         currentItem1 = item;
                     }
+                    if (inventoryManager.InventoryItems[1] == item)
+                    {
+                        currentItem2 = item;
+                    }
                 }
 
                 /*currentItem1 = item;
@@ -96,7 +102,20 @@ namespace StudentProject.Code.GameObjects
             _lives += potion.HealPoints;
             _lives -= potion.DamagePoints;
             currentItem1 = null;
-            inventoryManager.itemNum--;
+            inventoryManager.itemNum = 0; ;
+            inventoryManager.RemoveItem(potion);
+            potion.GetSprite().SetInWorldSpace(true);
+
+            potion.SetActive(false);
+            GetScreen().RemoveObject(potion);
+        }
+        public void UseItem2()
+        {
+            InventoryItem potion = (InventoryItem)currentItem2;
+            _lives += potion.HealPoints;
+            _lives -= potion.DamagePoints;
+            currentItem2 = null;
+            //inventoryManager.itemNum--;
             inventoryManager.RemoveItem(potion);
             potion.GetSprite().SetInWorldSpace(true);
 
@@ -143,17 +162,14 @@ namespace StudentProject.Code.GameObjects
                     //currentItem1 = inventoryManager.InventoryItems[0];
                 }
             }
-
-            /*if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D2))
+            if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D2))
             {
-                currentItem = inventoryManager.GetItem2();
-
-                //prevents program break if there are no items 
-                if (currentItem != null && inventoryManager.currentItem == 1)
+                //prevents program break if there are no items
+                if (currentItem2 is InventoryItem || currentItem2 != null)
                 {
-                    UseItem();
+                    UseItem2();
                 }
-            }*/
+            }
 
 
             if (GameInput.IsKeyPressed("W"))
