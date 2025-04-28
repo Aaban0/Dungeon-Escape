@@ -4,26 +4,28 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/bat.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Heart.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/inventory.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/mummy.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_2_ruby.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_gold.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_puce.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/tempBackground.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/user.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Wall.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/werewolf.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/Arial.spritefont</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/BackgroundShader.fx</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/ComicSans.spritefont</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/DefaultFont.spritefont</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/GrayscaleEffect.fx</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/Pixel.png</File>
-    <File>C:/Users/aaban/OneDrive/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/SpriteFill.fx</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/bat.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Heart.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/inventory.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/mummy.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_2_ruby.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_gold.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_puce.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Priest.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/tempBackground.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/user.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Wall.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/werewolf.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/Arial.spritefont</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/BackgroundShader.fx</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/ComicSans.spritefont</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/DefaultFont.spritefont</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/GrayscaleEffect.fx</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/Pixel.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/SpriteFill.fx</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

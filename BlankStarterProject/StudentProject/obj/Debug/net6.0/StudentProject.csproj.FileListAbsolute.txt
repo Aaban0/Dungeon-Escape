@@ -149,3 +149,4 @@ C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProjec
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\StudentProject.pdb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\StudentProject.genruntimeconfig.cache
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\obj\Debug\net6.0\ref\StudentProject.dll
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\Priest.xnb

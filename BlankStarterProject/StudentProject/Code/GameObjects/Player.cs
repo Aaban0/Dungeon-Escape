@@ -27,7 +27,8 @@ namespace StudentProject.Code.GameObjects
             currentItem4 = null;
 
             //Sets up players inital sprite
-            SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
+            SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.Bounce);
+            GetSprite().SetScale(2, 2);
             death = false;
             _lives = 3;
             _speed = 4;
@@ -163,6 +164,13 @@ namespace StudentProject.Code.GameObjects
 
         private void EnemyAttack()
         {
+            if (GameInput.IsKeyPressed("e"))
+            {
+                SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                GetSprite().SetScale(2, 2);
+                GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
+            }
+
             Enemy enemy = (Enemy)GetOneIntersectingObject<Enemy>();
             if (enemy is Enemy)
             {
