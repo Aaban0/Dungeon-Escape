@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/frame.png</SourceFile>
-  <SourceTime>2025-04-29T09:06:26.0226311+01:00</SourceTime>
+  <SourceTime>2025-04-29T11:13:06.4571788+01:00</SourceTime>
   <DestFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/bin/DesktopGL/Images/frame.xnb</DestFile>
-  <DestTime>2025-04-29T10:57:27.2055955+01:00</DestTime>
+  <DestTime>2025-04-29T11:16:59.2050707+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
