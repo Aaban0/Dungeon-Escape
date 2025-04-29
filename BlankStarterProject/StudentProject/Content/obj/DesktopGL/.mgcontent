@@ -4,8 +4,16 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/../../../../../../Desktop/Map/door.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/bat.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/bridge.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/door locked.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/door.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/edge inner.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/edge outer.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/fire.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/floor.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/floor1.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/frame.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Heart.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/inventory.png</File>
@@ -15,9 +23,18 @@
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_gold.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/potion_puce.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Priest.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/row side.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/row up.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/sewer water.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/sewer.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/sewer2.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/stairs down.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/stairs side.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/tempBackground.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/user.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/wall.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/water end.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/water start.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/werewolf.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/Arial.spritefont</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/BackgroundShader.fx</File>
@@ -28,6 +45,23 @@
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/SpriteFill.fx</File>
   </SourceFiles>
   <DestFiles>
+    <File>Images/door.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
