@@ -1,4 +1,6 @@
-﻿namespace StudentProject.Code.Screens
+﻿using System;
+
+namespace StudentProject.Code.Screens
 {
     public class MyWorld : Screen
     {
@@ -13,6 +15,9 @@
         private MegaPotion _mPotion;
         private PoisonPotion _pPotion;
 
+        private Door _door;
+        private Key _key;
+
         private Health _health;
         private InventoryManager inventoryManager;
 
@@ -26,6 +31,12 @@
 
             inventoryManager = new InventoryManager();
             AddObject(inventoryManager, 1550, 50);
+
+            _door = new Door();
+            AddObject(_door, 900, 900);
+
+            _key = new Key();
+            AddObject(_key, 950, 950);
 
             _wolf = new Wolf();
             AddObject(_wolf, 200, 800);
@@ -122,6 +133,14 @@
             }
 
 
+        }
+
+        private void DoorCheck()
+        {
+            if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() == 1)
+            {
+                Transition.Instance.ToScreen<EndScreen>();
+            }
         }
     }
 }

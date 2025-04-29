@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace StudentProject.Code.GameObjects
         public bool death {  get; set; }
         private int _speed { get; set; }
         private bool _flipped { get; set; }
+        private int _keys {  get; set; }
+        private bool _doorCollision { get; set; }
 
         public InventoryManager inventoryManager { get; set; }
         public InventoryItem currentItem1 { get; set; }
@@ -30,21 +33,27 @@ namespace StudentProject.Code.GameObjects
             //Sets up players inital sprite
             SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.Bounce);
             GetSprite().SetScale(2, 2);
+
             death = false;
             _lives = 3;
             _speed = 4;
             _flipped = false;
+            _doorCollision = false;
+            _keys = 0;
         }
 
         public override void Update(float deltaTime)
         {
             ItemCheck();
+            DoorCheck();
 
             CheckForObstacles();
             HandleInputs();
 
             EnemyAttack();
             PlayerCollision();
+
+            KeyCheck();
         }
         private void ItemCheck()
         {
@@ -187,6 +196,27 @@ namespace StudentProject.Code.GameObjects
                 {
                     GetScreen().RemoveObject(enemy);
                 }
+            }
+        }
+
+        private void DoorCheck()
+        {
+            Door door = (Door)GetOneIntersectingObject<Door>();
+            if (door != null)
+            {
+                //if player is touching door then variable set to true
+                _doorCollision = true;
+            }
+        }
+
+        private void KeyCheck()
+        {
+            GameObject key = GetOneIntersectingObject<Key>();
+            if (key != null)
+            {
+                //if player touches key then keys = +1 and key gets removed
+                GetScreen().RemoveObject(key);
+                _keys++;
             }
         }
 
@@ -350,6 +380,15 @@ namespace StudentProject.Code.GameObjects
         public int Lives()
         {
             return _lives;
+        }
+
+        public bool DoorCollision()
+        {
+            return _doorCollision;
+        }
+        public int GetKeys()
+        {
+            return _keys;
         }
     }
 

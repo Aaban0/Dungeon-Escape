@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentProject.Code.Screens
+namespace StudentProject.Code.GameObjects
 {
-    internal class EndScreen : Screen
+    internal class Key : GameObject
     {
-        public override void Start(Core core)
+        public Key()
         {
-            base.Start(core);
+            //Sets Sprite
+            SetSprite("Key");
         }
-
         public override void Update(float deltaTime)
         {
-            base.Update(deltaTime);
+
         }
     }
 }
