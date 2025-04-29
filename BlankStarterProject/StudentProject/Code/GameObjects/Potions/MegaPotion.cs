@@ -12,6 +12,7 @@ namespace StudentProject.Code.GameObjects
         {
             HealPoints = 2;
             SetSprite("potion_gold");
+            GetSprite().SetLayerDepth(7);
         }
         public MegaPotion(string name, int healPoints, int damagePoints)
         {

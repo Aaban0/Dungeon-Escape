@@ -12,6 +12,7 @@ namespace StudentProject.Code.GameObjects.map
         {
             SetSprite("floor1");
             GetSprite().SetScale(5, 5);
+            GetSprite().SetLayerDepth(7);
         }
         public override void Update(float deltaTime)
         {

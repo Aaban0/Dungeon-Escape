@@ -13,6 +13,7 @@ namespace StudentProject.Code.GameObjects
             HealPoints = 1;
 
             SetSprite("potion_2_ruby");
+            GetSprite().SetLayerDepth(7);
         }
 
         public Potion(string name, int healPoints, int damagePoints)

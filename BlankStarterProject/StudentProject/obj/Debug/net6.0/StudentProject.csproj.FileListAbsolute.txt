@@ -171,3 +171,4 @@ C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProjec
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\water start.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\wall left.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\wall right.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\door unlocked.xnb

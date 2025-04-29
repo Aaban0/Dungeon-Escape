@@ -11,7 +11,8 @@ namespace StudentProject.Code.GameObjects
         public Door()
         {
             //Sets sprite
-            SetSprite("door");
+            SetSprite("door locked");
+            GetSprite().SetScale(5, 5);
         }
         private void DoorCollison()
         {

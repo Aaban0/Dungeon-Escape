@@ -103,8 +103,60 @@ namespace StudentProject.Code.Screens
         private void BuildWalls()
         {
             var floor = new Floor1();
-            AddObject(floor, 0, 790);
+            AddObject(floor, -1, 189);
+            floor.GetSprite().SetScale(8.15f, 8.15f);
 
+            AddObject(new Floor1(), 0, 790);
+            AddObject(new Floor1(), 855, 265);
+            AddObject(new Floor1(), 855, 505);
+            AddObject(new Floor1(), 1095, 505);
+            AddObject(new Floor1(), 1245, 265);
+
+            AddObject(new Floor(), 240, 790);
+            AddObject(new Floor(), 390, 790);
+            AddObject(new Floor(), 540, 790);
+            AddObject(new Floor(), 540, 685);
+            AddObject(new Floor(), 540, 580);
+            AddObject(new Floor(), 540, 475);
+            AddObject(new Floor(), 540, 370);
+            AddObject(new Floor(), 390, 475);
+            AddObject(new Floor(), 390, 370);
+
+            AddObject(new Floor(), 45, 85);
+            AddObject(new Floor(), 195, 85);
+            AddObject(new Floor(), 345, 85);
+            AddObject(new Floor(), 495, 85);
+            AddObject(new Floor(), 645, 85);
+            AddObject(new Floor(), 795, 85);
+            AddObject(new Floor(), 945, 85);
+            AddObject(new Floor(), 1095, 85);
+            AddObject(new Floor(), 1095, 190);
+            AddObject(new Floor(), 1095, 295);
+            AddObject(new Floor(), 1095, 400);
+
+            AddObject(new Floor(), 1335, 598);
+            AddObject(new Floor(), 1485, 598);
+            AddObject(new Floor(), 1635, 598);
+            AddObject(new Floor(), 1635, 703);
+            AddObject(new Floor(), 1635, 808);
+            AddObject(new Floor(), 1635, 913);
+            AddObject(new Floor(), 1485, 913);
+            AddObject(new Floor(), 1335, 913);
+
+            AddObject(new Wall(), 1335, 502);
+            AddObject(new Wall(), 1335, 550);
+            AddObject(new Wall(), 1383, 502);
+            AddObject(new Wall(), 1383, 550);
+            AddObject(new Wall(), 1431, 502);
+            AddObject(new Wall(), 1431, 550);
+            AddObject(new Wall(), 1479, 502);
+            AddObject(new Wall(), 1479, 550);
+            AddObject(new Wall(), 1479, 454);
+
+            AddObject(new Wall_Left(), -3, -4);
+            AddObject(new Wall_Left(), -3, 44);
+            AddObject(new Wall_Left(), -3, 91);
+            AddObject(new Wall_Left(), -3, 138);
 
 
             // Place each wall halfway down the screen
@@ -155,6 +207,8 @@ namespace StudentProject.Code.Screens
         {
             if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() == 1)
             {
+                _door.SetSprite("door unlocked");
+                _door.GetSprite().SetScale(5, 5);
                 Transition.Instance.ToScreen<EndScreen>();
             }
         }

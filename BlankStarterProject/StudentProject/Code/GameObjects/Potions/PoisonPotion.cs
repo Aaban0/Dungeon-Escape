@@ -12,6 +12,7 @@ namespace StudentProject.Code.GameObjects
         {
             DamagePoints = 1;
             SetSprite("potion_puce");
+            GetSprite().SetLayerDepth(7);
         }
         public PoisonPotion(string name, int healPoints, int damagePoints)
         {
