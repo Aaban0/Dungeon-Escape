@@ -10,7 +10,7 @@ namespace StudentProject.Code.GameObjects
     {
         public Wall()
         {
-            SetSprite("wall");
+            SetSprite("door locked");
         }
 
         public override void Update(float deltaTime)

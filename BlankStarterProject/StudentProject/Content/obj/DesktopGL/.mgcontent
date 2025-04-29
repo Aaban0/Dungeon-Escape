@@ -17,10 +17,9 @@
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Priest.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/tempBackground.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/user.png</File>
-    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Wall.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/werewolf.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/bridge.png</File>
-    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/door.png</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/door locked.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/edge inner.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/edge outer.png</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/fire.png</File>
@@ -45,7 +44,6 @@
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/misc/SpriteFill.fx</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

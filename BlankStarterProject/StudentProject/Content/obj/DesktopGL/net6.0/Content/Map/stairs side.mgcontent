@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Images/Wall.png</SourceFile>
-  <SourceTime>2024-03-18T15:39:30+00:00</SourceTime>
-  <DestFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/bin/DesktopGL/Images/Wall.xnb</DestFile>
-  <DestTime>2025-04-29T10:28:38.0692365+01:00</DestTime>
+  <SourceFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/Map/stairs side.png</SourceFile>
+  <SourceTime>2025-04-29T10:19:57.8928074+01:00</SourceTime>
+  <DestFile>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/bin/DesktopGL/Content/Map/stairs side.xnb</DestFile>
+  <DestTime>2025-04-29T10:50:58.5614417+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

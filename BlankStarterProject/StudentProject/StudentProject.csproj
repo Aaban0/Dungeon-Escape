@@ -40,9 +40,4 @@
     </Reference>
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Code\GameObjects\map\" />
-  </ItemGroup>
-
 </Project>
