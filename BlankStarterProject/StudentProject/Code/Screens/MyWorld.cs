@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentProject.Code.GameObjects.map;
+using System;
 
 namespace StudentProject.Code.Screens
 {
@@ -30,6 +31,7 @@ namespace StudentProject.Code.Screens
             // TODO: Add your Screen start code below here
             //SetBackground("tempBackground", BackgroundType.FullScroll);
 
+
             inventoryManager = new InventoryManager();
             AddObject(inventoryManager, 1550, 50);
 
@@ -49,7 +51,7 @@ namespace StudentProject.Code.Screens
             AddObject(_bat, 1000, 300);
 
             _player = new Player();
-            AddObject(_player, 850, 400);
+            AddObject(_player, 70, 880);
 
             _potion2 = new Potion("Health Potion", 1, 0);
             AddObject(_potion2, 450, 450);
@@ -82,7 +84,7 @@ namespace StudentProject.Code.Screens
 
             if (_player.Death() == true)
             {
-                _player.SetPosition(100, 850);
+                _player.SetPosition(70, 880);
             }
 
             _health.SetHealth(_player.Lives());
@@ -100,6 +102,11 @@ namespace StudentProject.Code.Screens
 
         private void BuildWalls()
         {
+            var floor = new Floor1();
+            AddObject(floor, 0, 790);
+
+
+
             // Place each wall halfway down the screen
             int yPosition = (int)Settings.ScreenDimensions.X / 2;
 
@@ -119,6 +126,9 @@ namespace StudentProject.Code.Screens
 
                 // Place a Wall object coming in from the left
                 AddObject(new Wall(), xPosition, yPosition + 70);
+                /*AddObject(new Wall(), xPosition, yPosition + 120);
+                AddObject(new Wall(), xPosition, yPosition + 170);
+                AddObject(new Wall(), xPosition, yPosition + 220);*/
 
                 // Place a Wall object coming in from the right
                 AddObject(new Wall(), screenRightEdge - xPosition, yPosition + 70);
@@ -129,14 +139,14 @@ namespace StudentProject.Code.Screens
 
                 AddObject(new Wall(), screenRightEdge - xPosition, yPosition - 1015);
             }
-            /*for (int column = 0;column < numberOfWalls + 3; column++)
+            for (int column = 0;column < numberOfWalls + 4; column++)
             {
 
-                int yposition = column * (64 - gapBetweenWalls);
+                int yposition = column * (46 - gapBetweenWalls);
 
-                AddObject(new Wall(), -50, yposition);
-                AddObject(new Wall(), 1900, yposition);
-            }*/
+                AddObject(new Wall_Left(), -50, yposition - 50);
+                AddObject(new Wall_Right(), 1900, yposition - 50);
+            }
 
 
         }

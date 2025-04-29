@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework.Input;
+using StudentProject.Code.GameObjects.map;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,7 @@ namespace StudentProject.Code.GameObjects
             //Sets up players inital sprite
             SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.Bounce);
             GetSprite().SetScale(2, 2);
+            GetSprite().SetLayerDepth(4);
             SetBounds(10,10);
 
             death = false;
@@ -180,12 +182,16 @@ namespace StudentProject.Code.GameObjects
             {
                 SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 GetSprite().SetScale(2, 2);
+                SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
             }
             if (GameInput.IsKeyPressed("e") && _flipped == true)
             {
                 SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 GetSprite().SetScale(2, 2);
+                SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
                 GetSprite().FlipHorizontally(true);
             }
@@ -226,7 +232,7 @@ namespace StudentProject.Code.GameObjects
 
         private void CheckForObstacles()
         {
-            if (IsTouching<Wall>())
+            if (IsTouching<Wall>() || IsTouching<Wall_Left>())
             {
                 RevertPosition();
             }
@@ -293,17 +299,20 @@ namespace StudentProject.Code.GameObjects
             {
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
             else if (GameInput.IsKeyHeld("W"))
             {
                 SetPosition(GetX(), GetY() - _speed);
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
             else if (GameInput.IsKeyReleased("W"))
             {
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
 
 
@@ -311,17 +320,20 @@ namespace StudentProject.Code.GameObjects
             {
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
             else if (GameInput.IsKeyHeld("S"))
             {
                 SetPosition(GetX(), GetY() + _speed);
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
             else if (GameInput.IsKeyReleased("S"))
             {
                 CheckForObstacles();
                 SetBounds(100, 100);
+                GetSprite().SetLayerDepth(4);
             }
 
 
@@ -329,6 +341,7 @@ namespace StudentProject.Code.GameObjects
             {
                 SetSprite("Priest", 32, 32, 0.05f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 GetSprite().SetScale(2, 2);
+                GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(2, 0.05f, LoopType.Bounce);
 
                 _flipped = true;
@@ -338,6 +351,7 @@ namespace StudentProject.Code.GameObjects
             else if (GameInput.IsKeyHeld("A"))
             {
                 SetPosition(GetX() - _speed, GetY());
+                GetSprite().SetLayerDepth(4);
 
                 GetSprite().FlipHorizontally(true);
                 _flipped = true;
@@ -348,6 +362,7 @@ namespace StudentProject.Code.GameObjects
             {
                 SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 //GetAnimatedSprite().StartAnimation(0, 0.1f, LoopType.Bounce);
+                GetSprite().SetLayerDepth(4);
                 GetSprite().SetScale(2, 2);
 
                 GetSprite().FlipHorizontally(true);
@@ -360,6 +375,7 @@ namespace StudentProject.Code.GameObjects
             {
                 SetSprite("Priest", 32, 32, 0.05f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 GetSprite().SetScale(2, 2);
+                GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(2, 0.05f, LoopType.Bounce);
 
                 _flipped = false;
@@ -369,6 +385,7 @@ namespace StudentProject.Code.GameObjects
             else if (GameInput.IsKeyHeld("D"))
             {
                 SetPosition(GetX() + _speed, GetY());
+                GetSprite().SetLayerDepth(4);
 
                 GetSprite().FlipHorizontally(false);
                 _flipped = false;
@@ -379,6 +396,7 @@ namespace StudentProject.Code.GameObjects
             {
                 SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
                 //GetAnimatedSprite().StartAnimation(0, 0.1f, LoopType.Bounce);
+                GetSprite().SetLayerDepth(4);
                 GetSprite().SetScale(2, 2);
 
                 GetSprite().FlipHorizontally(false);

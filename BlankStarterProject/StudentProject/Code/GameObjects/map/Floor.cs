@@ -11,6 +11,7 @@ namespace StudentProject.Code.GameObjects.map
         public Floor()
         {
             SetSprite("floor");
+            GetSprite().SetScale(3, 3);
         }
         public override void Update(float deltaTime)
         {

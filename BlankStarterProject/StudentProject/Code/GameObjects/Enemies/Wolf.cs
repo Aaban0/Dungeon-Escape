@@ -13,6 +13,9 @@ namespace StudentProject.Code.GameObjects
         public Wolf()
         {
             SetSprite("werewolf", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
+            GetSprite().SetScale(1.5f, 1.5f);
+            GetSprite().SetLayerDepth(4);
+            SetBounds(100, 100);
             SetVelocity(0, -3.0f);
 
             _flip = false;

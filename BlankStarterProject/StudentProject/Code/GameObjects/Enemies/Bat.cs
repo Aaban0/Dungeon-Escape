@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentProject.Code.GameObjects.map;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace StudentProject.Code.GameObjects
             //set sprite 
             SetSprite("bat", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             SetVelocity(4.0f, 0);
+            GetSprite().SetLayerDepth(6);
 
             _speed = 5;
         }
@@ -33,7 +35,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
-            if (IsTouching<Wall>())
+            if (IsTouching<Wall>() || IsTouching<Wall_Left>() || IsTouching<Wall_Right>())
             {
                 RevertPosition();
             }
