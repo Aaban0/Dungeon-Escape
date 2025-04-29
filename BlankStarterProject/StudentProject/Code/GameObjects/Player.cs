@@ -11,6 +11,7 @@ namespace StudentProject.Code.GameObjects
         public int _lives {  get; set; }
         public bool death {  get; set; }
         private int _speed { get; set; }
+        private bool _flipped { get; set; }
 
         public InventoryManager inventoryManager { get; set; }
         public InventoryItem currentItem1 { get; set; }
@@ -32,6 +33,7 @@ namespace StudentProject.Code.GameObjects
             death = false;
             _lives = 3;
             _speed = 4;
+            _flipped = false;
         }
 
         public override void Update(float deltaTime)
@@ -170,6 +172,13 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().SetScale(2, 2);
                 GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
             }
+            if (GameInput.IsKeyPressed("e") && _flipped == true)
+            {
+                SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                GetSprite().SetScale(2, 2);
+                GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
+                GetSprite().FlipHorizontally(true);
+            }
 
             Enemy enemy = (Enemy)GetOneIntersectingObject<Enemy>();
             if (enemy is Enemy)
@@ -248,8 +257,6 @@ namespace StudentProject.Code.GameObjects
 
             if (GameInput.IsKeyPressed("W"))
             {
-                SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
-                GetAnimatedSprite().StartAnimation(0);
                 CheckForObstacles();
             }
             else if (GameInput.IsKeyHeld("W"))
@@ -259,16 +266,12 @@ namespace StudentProject.Code.GameObjects
             }
             else if (GameInput.IsKeyReleased("W"))
             {
-                GetAnimatedSprite().StartAnimation(0, null, LoopType.None);
-                //GetAnimatedSprite().SetPaused(true);
-                CheckForObstacles();
+
             }
 
 
             if (GameInput.IsKeyPressed("S"))
             {
-                SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
-                GetAnimatedSprite().StartAnimation(2);
                 CheckForObstacles();
             }
             else if (GameInput.IsKeyHeld("S"))
@@ -278,40 +281,64 @@ namespace StudentProject.Code.GameObjects
             }
             else if (GameInput.IsKeyReleased("S"))
             {
-                GetAnimatedSprite().StartAnimation(2, null, LoopType.None);
+
             }
 
 
             if (GameInput.IsKeyPressed("A"))
             {
-                SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
-                GetAnimatedSprite().StartAnimation(3);
+                SetSprite("Priest", 32, 32, 0.05f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                GetSprite().SetScale(2, 2);
+                GetAnimatedSprite().StartAnimation(2, 0.05f, LoopType.Bounce);
+
+                _flipped = true;
                 CheckForObstacles();
             }
             else if (GameInput.IsKeyHeld("A"))
             {
                 SetPosition(GetX() - _speed, GetY());
+
+                GetSprite().FlipHorizontally(true);
+                _flipped = true;
+                CheckForObstacles();
             }
             else if (GameInput.IsKeyReleased("A"))
             {
-                GetAnimatedSprite().StartAnimation(3, null, LoopType.None);
-                //GetAnimatedSprite().SetPaused(true);
+                SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                //GetAnimatedSprite().StartAnimation(0, 0.1f, LoopType.Bounce);
+                GetSprite().SetScale(2, 2);
+
+                GetSprite().FlipHorizontally(true);
+                _flipped = true;
                 CheckForObstacles();
             }
 
             if (GameInput.IsKeyPressed("D"))
             {
-                SetSprite("user", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 }, LoopType.None);
-                GetAnimatedSprite().StartAnimation(1);
+                SetSprite("Priest", 32, 32, 0.05f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                GetSprite().SetScale(2, 2);
+                GetAnimatedSprite().StartAnimation(2, 0.05f, LoopType.Bounce);
+
+                _flipped = false;
+                CheckForObstacles();
             }
             else if (GameInput.IsKeyHeld("D"))
             {
                 SetPosition(GetX() + _speed, GetY());
+
+                GetSprite().FlipHorizontally(false);
+                _flipped = false;
                 CheckForObstacles();
             }
             else if (GameInput.IsKeyReleased("D"))
             {
-                GetAnimatedSprite().StartAnimation(1, null, LoopType.None);
+                SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.None);
+                //GetAnimatedSprite().StartAnimation(0, 0.1f, LoopType.Bounce);
+                GetSprite().SetScale(2, 2);
+
+                GetSprite().FlipHorizontally(false);
+                _flipped = false;
+                CheckForObstacles();
             }
         }
 
