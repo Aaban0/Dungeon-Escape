@@ -12,6 +12,7 @@ namespace StudentProject.Code.GameObjects
         {
             //Sets Sprite
             SetSprite("Key");
+            GetSprite().SetLayerDepth(1);
         }
         public override void Update(float deltaTime)
         {

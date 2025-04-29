@@ -20,6 +20,7 @@ namespace StudentProject.Code.Screens
 
         private Health _health;
         private InventoryManager inventoryManager;
+        private KeyManager _keyManager;
 
         private Vector2 _position;
 
@@ -32,11 +33,11 @@ namespace StudentProject.Code.Screens
             inventoryManager = new InventoryManager();
             AddObject(inventoryManager, 1550, 50);
 
+            _keyManager = new KeyManager();
+            AddObject(_keyManager, 1779, 160);
+
             _door = new Door();
             AddObject(_door, 900, 900);
-
-            _key = new Key();
-            AddObject(_key, 950, 950);
 
             _wolf = new Wolf();
             AddObject(_wolf, 200, 800);
@@ -62,6 +63,9 @@ namespace StudentProject.Code.Screens
             _pPotion = new PoisonPotion("Poison Potion", 0, 1);
             AddObject(_pPotion, 600, 600);
 
+            _key = new Key();
+            AddObject(_key, 950, 950);
+
             _health = new Health();
             AddObject(_health, 40, 50);
 
@@ -82,6 +86,8 @@ namespace StudentProject.Code.Screens
             }
 
             _health.SetHealth(_player.Lives());
+
+            DoorCheck();
         }
 
         private void SceneCamera()

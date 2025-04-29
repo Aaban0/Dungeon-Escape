@@ -152,3 +152,4 @@ C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProjec
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\Priest.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\door.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\Key.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\Images\frame.xnb
