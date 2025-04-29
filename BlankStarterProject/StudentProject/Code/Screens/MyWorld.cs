@@ -54,19 +54,20 @@ namespace StudentProject.Code.Screens
             AddObject(_player, 70, 880);
 
             _potion2 = new Potion("Health Potion", 1, 0);
-            AddObject(_potion2, 450, 450);
+            AddObject(_potion2, 60, 500);
 
             _potion = new Potion("Health Potion", 1, 0);
-            AddObject(_potion, 500, 500);
+            AddObject(_potion, 1690, 700);
 
             _mPotion = new MegaPotion("Health Potion", 2, 0);
-            AddObject(_mPotion, 550, 550);
+            AddObject(_mPotion, 895, 670);
 
             _pPotion = new PoisonPotion("Poison Potion", 0, 1);
-            AddObject(_pPotion, 600, 600);
+            AddObject(_pPotion, 750, 115);
 
             _key = new Key();
-            AddObject(_key, 950, 950);
+            //AddObject(_key, 800, 950);
+            AddObject(_key, 1700, 120);
 
             _health = new Health();
             AddObject(_health, 40, 50);
