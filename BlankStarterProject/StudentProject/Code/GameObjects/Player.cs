@@ -33,6 +33,7 @@ namespace StudentProject.Code.GameObjects
             //Sets up players inital sprite
             SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.Bounce);
             GetSprite().SetScale(2, 2);
+            SetBounds(10,10);
 
             death = false;
             _lives = 3;
@@ -291,30 +292,36 @@ namespace StudentProject.Code.GameObjects
             if (GameInput.IsKeyPressed("W"))
             {
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyHeld("W"))
             {
                 SetPosition(GetX(), GetY() - _speed);
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyReleased("W"))
             {
-
+                CheckForObstacles();
+                SetBounds(100, 100);
             }
 
 
             if (GameInput.IsKeyPressed("S"))
             {
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyHeld("S"))
             {
                 SetPosition(GetX(), GetY() + _speed);
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyReleased("S"))
             {
-
+                CheckForObstacles();
+                SetBounds(100, 100);
             }
 
 
@@ -326,6 +333,7 @@ namespace StudentProject.Code.GameObjects
 
                 _flipped = true;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyHeld("A"))
             {
@@ -334,6 +342,7 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().FlipHorizontally(true);
                 _flipped = true;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyReleased("A"))
             {
@@ -344,6 +353,7 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().FlipHorizontally(true);
                 _flipped = true;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
 
             if (GameInput.IsKeyPressed("D"))
@@ -354,6 +364,7 @@ namespace StudentProject.Code.GameObjects
 
                 _flipped = false;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyHeld("D"))
             {
@@ -362,6 +373,7 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().FlipHorizontally(false);
                 _flipped = false;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
             else if (GameInput.IsKeyReleased("D"))
             {
@@ -372,6 +384,7 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().FlipHorizontally(false);
                 _flipped = false;
                 CheckForObstacles();
+                SetBounds(100, 100);
             }
         }
 

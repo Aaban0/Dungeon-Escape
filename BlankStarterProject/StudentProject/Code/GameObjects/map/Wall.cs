@@ -10,7 +10,8 @@ namespace StudentProject.Code.GameObjects
     {
         public Wall()
         {
-            SetSprite("row up");
+            SetSprite("wall");
+            GetSprite().SetScale(3, 3);
         }
 
         public override void Update(float deltaTime)

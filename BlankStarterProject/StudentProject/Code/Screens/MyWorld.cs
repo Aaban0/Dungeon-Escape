@@ -103,11 +103,11 @@ namespace StudentProject.Code.Screens
             // Place each wall halfway down the screen
             int yPosition = (int)Settings.ScreenDimensions.X / 2;
 
-            // This is the size of the game, minus 1 Wall width (64px)
-            int screenRightEdge = (int)Settings.ScreenDimensions.X - 64;
+            // This is the size of the game, minus 1 Wall width (32px)
+            int screenRightEdge = (int)Settings.ScreenDimensions.X - 32;
 
             // The number of walls to place / how many iterations of our loop to run
-            int numberOfWalls = 15;
+            int numberOfWalls = 21;
 
             // The number of pixels between each consecutive Wall.
             int gapBetweenWalls = 1;
@@ -115,7 +115,7 @@ namespace StudentProject.Code.Screens
             for (int column = 0; column < numberOfWalls; column++)
             {
                 // The Wall's sprite is 64px wide, so move each new Wall by 64 before placing it in the world
-                int xPosition = column * (64 + gapBetweenWalls);
+                int xPosition = column * (47 + gapBetweenWalls);
 
                 // Place a Wall object coming in from the left
                 AddObject(new Wall(), xPosition, yPosition + 70);
@@ -129,14 +129,14 @@ namespace StudentProject.Code.Screens
 
                 AddObject(new Wall(), screenRightEdge - xPosition, yPosition - 1015);
             }
-            for (int column = 0;column < numberOfWalls + 3; column++)
+            /*for (int column = 0;column < numberOfWalls + 3; column++)
             {
 
                 int yposition = column * (64 - gapBetweenWalls);
 
                 AddObject(new Wall(), -50, yposition);
                 AddObject(new Wall(), 1900, yposition);
-            }
+            }*/
 
 
         }
