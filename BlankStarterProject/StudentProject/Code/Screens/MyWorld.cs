@@ -130,9 +130,19 @@ namespace StudentProject.Code.Screens
             AddObject(new Floor(), 795, 85);
             AddObject(new Floor(), 945, 85);
             AddObject(new Floor(), 1095, 85);
+            AddObject(new Floor(), 1245, 85);
+            AddObject(new Floor(), 1395, 85);
+            AddObject(new Floor(), 1545, 85);
+
             AddObject(new Floor(), 1095, 190);
             AddObject(new Floor(), 1095, 295);
             AddObject(new Floor(), 1095, 400);
+
+            AddObject(new Floor(), 1635, 493);
+            AddObject(new Floor(), 1635, 388);
+            AddObject(new Floor(), 1635, 283);
+            
+            AddObject(new Floor1(), 1585, 43);
 
             AddObject(new Floor(), 1335, 598);
             AddObject(new Floor(), 1485, 598);
@@ -141,7 +151,15 @@ namespace StudentProject.Code.Screens
             AddObject(new Floor(), 1635, 808);
             AddObject(new Floor(), 1635, 913);
             AddObject(new Floor(), 1485, 913);
+            AddObject(new Floor(), 1485, 808);
             AddObject(new Floor(), 1335, 913);
+            AddObject(new Floor(), 1335, 808);
+            AddObject(new Floor(), 1185, 913);
+            AddObject(new Floor(), 1185, 808);
+            AddObject(new Floor(), 1035, 913);
+            AddObject(new Floor(), 1035, 808);
+            AddObject(new Floor(), 885, 913);
+            AddObject(new Floor(), 885, 808);
 
             AddObject(new Wall(), 1335, 502);
             AddObject(new Wall(), 1335, 550);
