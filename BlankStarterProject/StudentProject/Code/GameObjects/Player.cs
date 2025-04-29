@@ -217,8 +217,8 @@ namespace StudentProject.Code.GameObjects
                 //if player touches key then keys = +1 and key gets removed
                 //GetScreen().RemoveObject(key);
                 key.GetSprite().SetInWorldSpace(false);
-                key.GetSprite().SetScale(2, 2);
-                key.SetPosition(new Vector2(1557.5f + 225, 170));
+                key.GetSprite().SetScale(1.7f, 1.7f);
+                key.SetPosition(new Vector2(1557.5f + 232, 173));
                 _keys++;
             }
         }
