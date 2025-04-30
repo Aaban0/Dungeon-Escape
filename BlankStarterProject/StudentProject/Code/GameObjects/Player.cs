@@ -67,6 +67,7 @@ namespace StudentProject.Code.GameObjects
                 {
                     InventoryItem ii = (InventoryItem)inventoryItem;
                     ItemPickUp(ii);
+                    AudioManager.Instance.PlaySFX("PotionPickUp");
                 }
             }
         }
@@ -132,7 +133,7 @@ namespace StudentProject.Code.GameObjects
             currentItem1 = null;
             inventoryManager.itemNum = 0;
             inventoryManager.RemoveItem(potion);
-            potion.GetSprite().SetInWorldSpace(true);
+            potion.GetSprite().SetInWorldSpace(false);
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
@@ -145,7 +146,7 @@ namespace StudentProject.Code.GameObjects
             currentItem2 = null;
             inventoryManager.itemNum = 1;
             inventoryManager.RemoveItem(potion);
-            potion.GetSprite().SetInWorldSpace(true);
+            potion.GetSprite().SetInWorldSpace(false);
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
@@ -158,7 +159,7 @@ namespace StudentProject.Code.GameObjects
             currentItem3 = null;
             inventoryManager.itemNum--;
             inventoryManager.RemoveItem(potion);
-            potion.GetSprite().SetInWorldSpace(true);
+            potion.GetSprite().SetInWorldSpace(false);
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
@@ -170,7 +171,7 @@ namespace StudentProject.Code.GameObjects
             _lives -= potion.DamagePoints;
             currentItem4 = null;
             inventoryManager.RemoveItem(potion);
-            potion.GetSprite().SetInWorldSpace(true);
+            potion.GetSprite().SetInWorldSpace(false);
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
@@ -203,6 +204,8 @@ namespace StudentProject.Code.GameObjects
             {
                 if (GameInput.IsKeyPressed("e"))
                 {
+                    AudioManager.Instance.PlaySFX("EnemyHit");
+                    Camera.Instance.Shake(5, 0.1f);
                     GetScreen().RemoveObject(enemy);
                 }
             }
@@ -225,6 +228,7 @@ namespace StudentProject.Code.GameObjects
             {
                 //if player touches key then keys = +1 and key gets removed
                 //GetScreen().RemoveObject(key);
+                AudioManager.Instance.PlaySFX("KeyPickUp");
                 key.GetSprite().SetInWorldSpace(false);
                 key.GetSprite().SetScale(1.7f, 1.7f);
                 key.SetPosition(new Vector2(1557.5f + 232, 183));
@@ -246,6 +250,8 @@ namespace StudentProject.Code.GameObjects
 
             if (enemy != null)
             {
+                AudioManager.Instance.PlaySFX("PlayerHit");
+                Camera.Instance.Shake(10, 0.1f);
                 _lives--;
                 death = true;
             }

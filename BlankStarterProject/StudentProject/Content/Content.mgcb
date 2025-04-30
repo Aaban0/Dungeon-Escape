@@ -514,17 +514,41 @@
 /processorParam:Quality=Best
 /build:sfx/DeathScreen.ogg
 
+#begin sfx/DoorEnter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/DoorEnter.wav
+
+#begin sfx/EnemyHit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/EnemyHit.wav
+
 #begin sfx/EveMelee.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:sfx/EveMelee.wav
 
+#begin sfx/KeyPickUp.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/KeyPickUp.wav
+
 #begin sfx/PlayerHit.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
 /build:sfx/PlayerHit.wav
+
+#begin sfx/PotionPickUp.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/PotionPickUp.wav
 
 #begin sfx/WinMusic.wav
 /importer:WavImporter

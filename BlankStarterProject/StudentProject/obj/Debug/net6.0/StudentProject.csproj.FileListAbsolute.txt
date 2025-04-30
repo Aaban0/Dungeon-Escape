@@ -184,3 +184,7 @@ C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProjec
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\bgm\MainMenu.ogg
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\bgm\MainMenu.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\bgm\WinMusic.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\EnemyHit.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\KeyPickUp.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\DoorEnter.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\PotionPickUp.xnb

@@ -37,28 +37,29 @@ namespace StudentProject.Code.Screens
             // TODO: Add your Screen start code below here
             //SetBackground("tempBackground", BackgroundType.FullScroll);
 
+            inventoryManager = new InventoryManager();
+            AddObject(inventoryManager, 1550, 50);
+
             _item1 = new Text("[1]", Colour.White);
             AddText(_item1, 1570, 130);
-            _item1.SetScale(0.5f);
+            _item1.SetScale(0.45f);
+            //_item1.SetOrigin(-10, -10);
 
             _item2 = new Text("[2]", Colour.White);
             AddText(_item2, 1647, 130);
-            _item2.SetScale(0.5f);
+            _item2.SetScale(0.45f);
 
             _item3 = new Text("[3]", Colour.White);
             AddText(_item3, 1724, 130);
-            _item3.SetScale(0.5f);
+            _item3.SetScale(0.45f);
 
             _item4 = new Text("[4]", Colour.White);
             AddText(_item4, 1801, 130);
-            _item4.SetScale(0.5f);
+            _item4.SetScale(0.45f);
 
             _enter = new Text("[ENTER]", Colour.White);
             AddText(_enter, 1758, 250);
             _enter.SetScale(0.5f);
-
-            inventoryManager = new InventoryManager();
-            AddObject(inventoryManager, 1550, 50);
 
             _keyManager = new KeyManager();
             AddObject(_keyManager, 1779, 170);
@@ -521,6 +522,7 @@ namespace StudentProject.Code.Screens
         {
             if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() == 1)
             {
+                AudioManager.Instance.PlaySFX("DoorEnter");
                 _door.SetSprite("door unlocked");
                 _door.GetSprite().SetScale(5, 5);
                 Transition.Instance.ToScreen<EndScreen>();

@@ -23,6 +23,7 @@ namespace StudentProject.Code.GameObjects
             GetSprite().SetInWorldSpace(false);
             GetSprite().SetScale(2, 2);
             SetVisible(true);
+            GetSprite().SetLayerDepth(10);
         }
 
         public override void Update(float deltaTime)

@@ -7,7 +7,7 @@ namespace StudentProject
     { 
         protected override void Initialize()
         {
-            Window.Title = "DungeonEscape";
+            Window.Title = "Dungeon's Grip";
             // TODO: Add your game's initialization logic below here
             Settings.BackgroundFill = Colour.Black;
             StartScreen<MainMenu>();
