@@ -137,6 +137,8 @@ namespace StudentProject.Code.GameObjects
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
+
+            AudioManager.Instance.PlaySFX("UsePotion");
         }
         public void UseItem2()
         {
@@ -150,6 +152,8 @@ namespace StudentProject.Code.GameObjects
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
+
+            AudioManager.Instance.PlaySFX("UsePotion");
         }
         public void UseItem3()
         {
@@ -163,6 +167,8 @@ namespace StudentProject.Code.GameObjects
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
+
+            AudioManager.Instance.PlaySFX("UsePotion");
         }
         public void UseItem4()
         {
@@ -175,6 +181,8 @@ namespace StudentProject.Code.GameObjects
 
             potion.SetActive(false);
             GetScreen().RemoveObject(potion);
+
+            AudioManager.Instance.PlaySFX("UsePotion");
         }
 
         private void EnemyAttack()

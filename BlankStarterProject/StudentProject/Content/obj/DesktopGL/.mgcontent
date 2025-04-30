@@ -57,9 +57,11 @@
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/sfx/KeyPickUp.wav</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/sfx/PlayerHit.wav</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/sfx/PotionPickUp.wav</File>
+    <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/sfx/UsePotion.wav</File>
     <File>C:/Users/aaban/Documents/GitHub/Dungeon-Escape/BlankStarterProject/StudentProject/Content/sfx/WinMusic.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

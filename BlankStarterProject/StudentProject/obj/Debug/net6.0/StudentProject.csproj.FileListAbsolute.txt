@@ -188,3 +188,4 @@ C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProjec
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\KeyPickUp.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\DoorEnter.xnb
 C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\PotionPickUp.xnb
+C:\Users\aaban\Documents\GitHub\Dungeon-Escape\BlankStarterProject\StudentProject\bin\Debug\net6.0\Content\sfx\UsePotion.xnb
