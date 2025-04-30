@@ -23,6 +23,9 @@ namespace StudentProject.Code.Screens
         {
             base.Start(core);
 
+            //Background colour is changed
+            Settings.BackgroundFill = Colour.Black;
+
             //sets manu backgrund and sets audio 
             //AudioManager.Instance.StopBGM();
             //AudioManager.Instance.PlayBGM("Stage1");
