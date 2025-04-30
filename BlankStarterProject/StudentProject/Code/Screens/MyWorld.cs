@@ -42,7 +42,7 @@ namespace StudentProject.Code.Screens
             AddObject(_door, 900, 900);
 
             _wolf = new Wolf();
-            AddObject(_wolf, 200, 800);
+            AddObject(_wolf, 200, 400);
 
             _mummy = new Mummy();
             AddObject(_mummy, 1100, 900);
@@ -173,6 +173,25 @@ namespace StudentProject.Code.Screens
 
             AddObject(new Wall_Tint1(), 1239, 190);
             AddObject(new Wall_Tint1(), 1239, 220);
+
+            AddObject(new Wall_Tint1(), 1078, 190);
+            AddObject(new Wall_Tint1(), 1078, 220);
+
+            AddObject(new Wall(), 1030, 190);
+            AddObject(new Wall(), 1030, 238);
+
+            AddObject(new Wall(), 982, 190);
+            AddObject(new Wall(), 982, 238);
+
+            AddObject(new Wall(), 934, 190);
+            AddObject(new Wall(), 934, 238);
+
+            AddObject(new Wall(), 886, 190);
+            AddObject(new Wall(), 886, 238);
+
+            AddObject(new Wall(), 838, 190);
+            AddObject(new Wall(), 838, 238);
+
             /*AddObject(new Wall(), 1239, 742);
             AddObject(new Wall(), 1239, 790);*/
             AddObject(new Wall(), 1263, 190);
@@ -266,7 +285,15 @@ namespace StudentProject.Code.Screens
             AddObject(new Wall_Tint1(), 1623, 310);
             AddObject(new Wall_Tint1(), 1623, 502);
             AddObject(new Wall_Tint1(), 1623, 550);
+
             AddObject(new Wall_Tint1(), 1623, 694);
+            AddObject(new Wall(), 1575, 694);
+            AddObject(new Wall(), 1527, 694);
+            AddObject(new Wall(), 1479, 694);
+            AddObject(new Wall(), 1431, 694);
+            AddObject(new Wall(), 1383, 694);
+            AddObject(new Wall(), 1335, 694);
+
             AddObject(new Wall_Tint1(), 1623, 742);
             AddObject(new Wall_Tint1(), 1623, 790);
 
@@ -408,10 +435,47 @@ namespace StudentProject.Code.Screens
 
                 
             }
-            for (int column = 0; column < numberOfWalls - 2; column++)
+            for (int column = 0; column < numberOfWalls - 17; column++)
             {
+                int yposition3 = column * (46 - gapBetweenWalls);
 
+                AddObject(new Wall(), 644, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 644, yposition3 + 190);
+
+                AddObject(new Wall(), 596, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 596, yposition3 + 190);
+
+                AddObject(new Wall(), 548, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 548, yposition3 + 190);
+
+                AddObject(new Wall(), 500, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 500, yposition3 + 190);
+
+                AddObject(new Wall(), 452, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 452, yposition3 + 190);
+
+                AddObject(new Wall(), 404, yposition3 + 185);
+                AddObject(new Wall_Tint1(), 404, yposition3 + 190);
+
+                AddObject(new Wall_Tint1(), 356, yposition3 + 190);
+                //AddObject(new Wall_Tint1(), 356, yposition3 + 190);
             }
+
+            for (int column = 0; column < numberOfWalls - 10; column++)
+            {
+                int xPosition2 = column * (47 + gapBetweenWalls);
+                AddObject(new Wall(), xPosition2 - 1, yPosition - 380);
+                AddObject(new Wall(), xPosition2 - 1, yPosition - 332);
+                AddObject(new Wall(), xPosition2 - 1, yPosition - 284);
+                AddObject(new Wall(), xPosition2 - 1, yPosition - 236);
+                AddObject(new Wall(), xPosition2 - 1, yPosition - 215);
+            }
+
+            AddObject(new Wall_Tint1(), 527, 580);
+            AddObject(new Wall_Tint1(), 527, 628);
+            AddObject(new Wall_Tint1(), 527, 676);
+            AddObject(new Wall_Tint1(), 527, 724);
+            AddObject(new Wall_Tint1(), 527, 772);
         }
 
         private void DoorCheck()
