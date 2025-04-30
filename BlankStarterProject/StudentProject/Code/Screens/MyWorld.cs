@@ -101,6 +101,8 @@ namespace StudentProject.Code.Screens
 
 
             BuildWalls();
+
+            Transition.Instance.EndTransition();
         }
 
         public override void Update(float deltaTime)
