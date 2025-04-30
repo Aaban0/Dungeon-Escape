@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace StudentProject.Code.GameObjects.map
 {
-    internal class Wall_Right : GameObject
+    internal class Wall_Tint1 : GameObject
     {
-        public Wall_Right()
+        public Wall_Tint1()
         {
-            SetSprite("wall right");
-            GetSprite().SetScale(3, 3);
+            SetSprite("_wall");
+            GetSprite().SetLayerDepth(6);
+            GetSprite().SetScale(3f, 3.7f);
+            GetSprite().SetTint(200, 200, 200);
         }
         public override void Update(float deltaTime)
         {

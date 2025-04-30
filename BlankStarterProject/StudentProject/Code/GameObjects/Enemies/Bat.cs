@@ -35,7 +35,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
-            if (IsTouching<Wall>() || IsTouching<Wall_Left>() || IsTouching<Wall_Right>())
+            if (IsTouching<Wall>())
             {
                 RevertPosition();
             }

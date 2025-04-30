@@ -232,7 +232,7 @@ namespace StudentProject.Code.GameObjects
 
         private void CheckForObstacles()
         {
-            if (IsTouching<Wall>() || IsTouching<Wall_Left>())
+            if (IsTouching<Wall>())
             {
                 RevertPosition();
             }

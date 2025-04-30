@@ -143,7 +143,7 @@ namespace StudentProject.Code.Screens
             AddObject(new Floor(), 1635, 388);
             AddObject(new Floor(), 1635, 283);
             
-            AddObject(new Floor1(), 1585, 43);
+            AddObject(new Floor1(), 1585, 80);
 
             AddObject(new Floor(), 1335, 598);
             AddObject(new Floor(), 1485, 598);
@@ -172,11 +172,47 @@ namespace StudentProject.Code.Screens
             AddObject(new Wall(), 1479, 550);
             AddObject(new Wall(), 1479, 454);
 
-            AddObject(new Wall_Left(), -3, -4);
-            AddObject(new Wall_Left(), -3, 44);
-            AddObject(new Wall_Left(), -3, 91);
-            AddObject(new Wall_Left(), -3, 138);
+            /*AddObject(new Wall(), -3, -5);
+            AddObject(new Wall(), -3, 40);*/
+            AddObject(new Wall(), -3, 85);
+            AddObject(new Wall(), -3, 130);
+            AddObject(new Wall(), -3, 175);
 
+            AddObject(new Wall_Tint1(), -50, -5);
+            AddObject(new Wall_Tint2(), -50, -50);
+            AddObject(new Wall_Tint2(), -95, -50);
+            AddObject(new Wall_Tint3(), -50, -95);
+            AddObject(new Wall_Tint3(), -95, -95);
+
+            AddObject(new Wall(), -50, 1030);
+            AddObject(new Wall_Tint1(), -50, 1075);
+            AddObject(new Wall_Tint1(), -95, 1075);
+
+            AddObject(new Wall_Tint2(), -50, 1118);
+            AddObject(new Wall_Tint2(), -95, 1118);
+            AddObject(new Wall_Tint2(), -140, 1118);
+            AddObject(new Wall_Tint2(), -140, 1075);
+
+            AddObject(new Wall_Tint3(), -50, 1163);
+            AddObject(new Wall_Tint3(), -95, 1163);
+
+            AddObject(new Wall_Tint1(), 1900, -5);
+            AddObject(new Wall_Tint1(), 1945, -5);
+            AddObject(new Wall_Tint2(), 1900, -50);
+            AddObject(new Wall_Tint2(), 1945, -50);
+
+            AddObject(new Wall_Tint3(), 1900, -95);
+            AddObject(new Wall_Tint3(), 1945, -95);
+            AddObject(new Wall_Tint3(), 1990, -95);
+
+            AddObject(new Wall_Tint1(), 1900, 1075);
+            AddObject(new Wall_Tint1(), 1945, 1075);
+
+            AddObject(new Wall_Tint2(), 1900, 1118);
+            AddObject(new Wall_Tint2(), 1945, 1118);
+            AddObject(new Wall_Tint2(), 1990, 1118);
+            AddObject(new Wall_Tint2(), 1990, 1075);
+            AddObject(new Wall_Tint3(), 1900, 1163);
 
             // Place each wall halfway down the screen
             int yPosition = (int)Settings.ScreenDimensions.X / 2;
@@ -197,26 +233,48 @@ namespace StudentProject.Code.Screens
 
                 // Place a Wall object coming in from the left
                 AddObject(new Wall(), xPosition, yPosition + 70);
-                /*AddObject(new Wall(), xPosition, yPosition + 120);
-                AddObject(new Wall(), xPosition, yPosition + 170);
-                AddObject(new Wall(), xPosition, yPosition + 220);*/
+                AddObject(new Wall_Tint1(), xPosition, yPosition + 114);
+                AddObject(new Wall_Tint2(), xPosition, yPosition + 158);
+                AddObject(new Wall_Tint3(), xPosition, yPosition + 202);
 
                 // Place a Wall object coming in from the right
                 AddObject(new Wall(), screenRightEdge - xPosition, yPosition + 70);
+                AddObject(new Wall_Tint1(), screenRightEdge - xPosition, yPosition + 114);
+                AddObject(new Wall_Tint2(), screenRightEdge - xPosition, yPosition + 158);
+                AddObject(new Wall_Tint3(), screenRightEdge - xPosition, yPosition + 202);
 
 
                 //places walls on the top of the screen
-                AddObject(new Wall(), xPosition, yPosition - 1015);
 
-                AddObject(new Wall(), screenRightEdge - xPosition, yPosition - 1015);
+
+
+                AddObject(new Wall_Tint3(), xPosition - 1, yPosition - 1055);
+
+                AddObject(new Wall_Tint2(), xPosition - 1, yPosition - 1010);
+                AddObject(new Wall_Tint1(), xPosition - 1, yPosition - 965);
+
+                AddObject(new Wall(), xPosition - 1, yPosition - 920);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 920);
+
+                AddObject(new Wall_Tint3(), screenRightEdge - 1 - xPosition, yPosition - 1055);
+                AddObject(new Wall_Tint2(), screenRightEdge - 1 - xPosition, yPosition - 1010);
+                AddObject(new Wall_Tint1(), screenRightEdge - 1 - xPosition, yPosition - 965);
             }
             for (int column = 0;column < numberOfWalls + 4; column++)
             {
 
                 int yposition = column * (46 - gapBetweenWalls);
 
-                AddObject(new Wall_Left(), -50, yposition - 50);
-                AddObject(new Wall_Right(), 1900, yposition - 50);
+                AddObject(new Wall(), -50, yposition - 50);
+                AddObject(new Wall_Tint1(), -95, yposition - 50);
+                AddObject(new Wall_Tint2(), -140, yposition - 50);
+                AddObject(new Wall_Tint3(), -185, yposition - 50);
+
+
+                AddObject(new Wall(), 1900, yposition - 50);
+                AddObject(new Wall_Tint1(), 1945, yposition - 50);
+                AddObject(new Wall_Tint2(), 1990, yposition - 50);
+                AddObject(new Wall_Tint3(), 2035, yposition - 50);
             }
 
 

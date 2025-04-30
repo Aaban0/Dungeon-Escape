@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentProject.Code.GameObjects
+namespace StudentProject.Code.GameObjects.map
 {
-    internal class Wall : GameObject
+    internal class Wall_Tint2 : GameObject
     {
-        public Wall()
+        public Wall_Tint2()
         {
             SetSprite("_wall");
             GetSprite().SetScale(3f, 3.7f);
-            GetSprite().SetTint(230, 230, 230);
-            GetSprite().SetLayerDepth(9);
-            //GetSprite().SetTint(222, 240, 240);
+            GetSprite().SetTint(140, 140, 140);
+            GetSprite().SetLayerDepth(5);
         }
-
         public override void Update(float deltaTime)
         {
 

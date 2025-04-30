@@ -37,7 +37,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
-            if (IsTouching<Wall_Left>() || IsTouching<Wall_Right>())
+            if (IsTouching<Wall>())
             {
                 SetVelocity(GetVelocity().X * -1, GetVelocity().Y);
             }
@@ -49,13 +49,13 @@ namespace StudentProject.Code.GameObjects
 
             CheckCollisions();
 
-            if (/*IsTouching<Wall_Left>() || */IsTouching<Wall_Right>() && _flip == false)
+            if (/*IsTouching<Wall_Left>() || */IsTouching<Wall>() && _flip == false)
             {
                 RevertPosition();
                 GetAnimatedSprite().StartAnimation(3);
                 _flip = true;
             }
-            if (IsTouching<Wall_Left>() /*|| IsTouching<Wall_Right>() */&& _flip == true)
+            if (IsTouching<Wall>() /*|| IsTouching<Wall_Right>() */&& _flip == true)
             {
                 RevertPosition();
                 GetAnimatedSprite().StartAnimation(1);
