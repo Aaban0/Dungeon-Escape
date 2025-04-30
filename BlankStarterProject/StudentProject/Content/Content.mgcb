@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin EveMelee.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:EveMelee.wav
+
 #begin Images/_wall.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -483,4 +489,10 @@
 /processor:EffectProcessor
 /processorParam:DebugMode=Auto
 /build:misc/SpriteFill.fx
+
+#begin PlayerHit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:PlayerHit.wav
 
