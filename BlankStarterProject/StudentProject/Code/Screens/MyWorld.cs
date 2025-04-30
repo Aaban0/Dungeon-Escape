@@ -49,8 +49,8 @@ namespace StudentProject.Code.Screens
 
             _bat = new Bat();
             AddObject(_bat, 1050, 400);
-            /*AddObject(new Bat(), 1330, 330);
-            AddObject(new Bat(), 930, 600);*/
+            AddObject(new Bat(), 1330, 330);
+            AddObject(new Bat(), 930, 600);
 
             _player = new Player();
             AddObject(_player, 70, 880);
@@ -471,11 +471,23 @@ namespace StudentProject.Code.Screens
                 AddObject(new Wall(), xPosition2 - 1, yPosition - 215);
             }
 
+            for (int column = 0; column < numberOfWalls - 11; column++)
+            {
+                int xPosition3 = column * (47 + gapBetweenWalls);
+                AddObject(new Wall(), xPosition3 + 250, yPosition + 24);
+                AddObject(new Wall(), xPosition3 + 250, yPosition - 24);
+                AddObject(new Wall(), xPosition3 + 250, yPosition - 72);
+            }
+
             AddObject(new Wall_Tint1(), 527, 580);
             AddObject(new Wall_Tint1(), 527, 628);
             AddObject(new Wall_Tint1(), 527, 676);
             AddObject(new Wall_Tint1(), 527, 724);
             AddObject(new Wall_Tint1(), 527, 772);
+
+            AddObject(new Wall_Tint1(), 205, 984);
+            AddObject(new Wall_Tint1(), 205, 936);
+            AddObject(new Wall_Tint1(), 205, 888);
         }
 
         private void DoorCheck()
