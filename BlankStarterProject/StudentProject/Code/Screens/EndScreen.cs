@@ -29,6 +29,9 @@ namespace StudentProject.Code.Screens
             //Background colour is changed
             Settings.BackgroundFill = Colour.Gray;
 
+            AudioManager.Instance.StopBGM();
+            AudioManager.Instance.PlayBGM("WinMusic");
+
             //sets a text on screen with the colour white and sets scale increase by 2
             //also has changed the font type
             _text = new Text("You Escaped", Colour.White);
@@ -100,14 +103,14 @@ namespace StudentProject.Code.Screens
             {
                 //if enter is pressed player transitioned to new screen
                 //a sound clip is also played when enter is pressed
-                //AudioManager.Instance.PlaySFX("click");
+                AudioManager.Instance.PlaySFX("click");
                 Transition.Instance.ToScreen<MainMenu>();
             }
             else if (GameInput.IsKeyPressed("Esc"))
             {
                 //if esc is pressed player transitioned to new screen
                 //a sound clip is also played when enter is pressed
-                //AudioManager.Instance.PlaySFX("click");
+                AudioManager.Instance.PlaySFX("click");
                 Core.EndGame();
                 Core.CloseGame();
             }

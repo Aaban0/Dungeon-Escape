@@ -13,11 +13,23 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin EveMelee.wav
+#begin bgm/DeathScreen.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:EveMelee.wav
+/build:bgm/DeathScreen.wav
+
+#begin bgm/MainMenu.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:bgm/MainMenu.wav
+
+#begin bgm/WinMusic.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:bgm/WinMusic.wav
 
 #begin Images/_wall.png
 /importer:TextureImporter
@@ -490,9 +502,33 @@
 /processorParam:DebugMode=Auto
 /build:misc/SpriteFill.fx
 
-#begin PlayerHit.wav
+#begin sfx/click.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:PlayerHit.wav
+/build:sfx/click.wav
+
+#begin sfx/DeathScreen.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:sfx/DeathScreen.ogg
+
+#begin sfx/EveMelee.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/EveMelee.wav
+
+#begin sfx/PlayerHit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/PlayerHit.wav
+
+#begin sfx/WinMusic.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx/WinMusic.wav
 

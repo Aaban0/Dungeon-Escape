@@ -43,8 +43,6 @@ namespace StudentProject.Code.GameObjects
             _flipped = false;
             _doorCollision = false;
             _keys = 0;
-
-            AudioManager.Instance.PlaySFX("EveMelee");
         }
 
         public override void Update(float deltaTime)
@@ -187,7 +185,7 @@ namespace StudentProject.Code.GameObjects
                 SetBounds(100, 100);
                 GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
-                //AudioManager.Instance.PlaySFX("EveMelee");
+                AudioManager.Instance.PlaySFX("EveMelee");
             }
             if (GameInput.IsKeyPressed("e") && _flipped == true)
             {
@@ -197,7 +195,7 @@ namespace StudentProject.Code.GameObjects
                 GetSprite().SetLayerDepth(4);
                 GetAnimatedSprite().StartAnimation(3, 0.01f, LoopType.None);
                 GetSprite().FlipHorizontally(true);
-                //AudioManager.Instance.PlaySFX("EveMelee");
+                AudioManager.Instance.PlaySFX("EveMelee");
             }
 
             Enemy enemy = (Enemy)GetOneIntersectingObject<Enemy>();
