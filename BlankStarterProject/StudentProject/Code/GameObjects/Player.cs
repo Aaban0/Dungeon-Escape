@@ -225,7 +225,7 @@ namespace StudentProject.Code.GameObjects
                 //GetScreen().RemoveObject(key);
                 key.GetSprite().SetInWorldSpace(false);
                 key.GetSprite().SetScale(1.7f, 1.7f);
-                key.SetPosition(new Vector2(1557.5f + 232, 173));
+                key.SetPosition(new Vector2(1557.5f + 232, 183));
                 _keys++;
             }
         }

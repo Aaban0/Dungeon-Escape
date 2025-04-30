@@ -23,6 +23,12 @@ namespace StudentProject.Code.Screens
         private InventoryManager inventoryManager;
         private KeyManager _keyManager;
 
+        private Text _item1;
+        private Text _item2;
+        private Text _item3;
+        private Text _item4;
+        private Text _enter;
+
         private Vector2 _position;
 
         public override void Start(Core core)
@@ -31,12 +37,31 @@ namespace StudentProject.Code.Screens
             // TODO: Add your Screen start code below here
             //SetBackground("tempBackground", BackgroundType.FullScroll);
 
+            _item1 = new Text("[1]", Colour.White);
+            AddText(_item1, 1570, 130);
+            _item1.SetScale(0.5f);
+
+            _item2 = new Text("[2]", Colour.White);
+            AddText(_item2, 1647, 130);
+            _item2.SetScale(0.5f);
+
+            _item3 = new Text("[3]", Colour.White);
+            AddText(_item3, 1724, 130);
+            _item3.SetScale(0.5f);
+
+            _item4 = new Text("[4]", Colour.White);
+            AddText(_item4, 1801, 130);
+            _item4.SetScale(0.5f);
+
+            _enter = new Text("[ENTER]", Colour.White);
+            AddText(_enter, 1758, 250);
+            _enter.SetScale(0.5f);
 
             inventoryManager = new InventoryManager();
             AddObject(inventoryManager, 1550, 50);
 
             _keyManager = new KeyManager();
-            AddObject(_keyManager, 1779, 160);
+            AddObject(_keyManager, 1779, 170);
 
             _door = new Door();
             AddObject(_door, 900, 900);
@@ -83,7 +108,7 @@ namespace StudentProject.Code.Screens
             base.Update(deltaTime);
             // TODO: Add your Screen update code below here
 
-            //SceneCamera();
+            SceneCamera();
 
             if (_player.Death() == true)
             {
