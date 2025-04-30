@@ -68,10 +68,12 @@ namespace StudentProject.Code.Screens
             AddObject(_door, 900, 900);
 
             _wolf = new Wolf();
-            AddObject(_wolf, 200, 400);
+            AddObject(_wolf, 150, 400);
+            AddObject(new Wolf(), 1680, 700);
 
             _mummy = new Mummy();
             AddObject(_mummy, 1100, 900);
+            AddObject(new Mummy(), 550, 105);
 
             _bat = new Bat();
             AddObject(_bat, 1050, 400);
