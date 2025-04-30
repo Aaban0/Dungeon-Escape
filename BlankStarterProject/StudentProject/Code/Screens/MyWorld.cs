@@ -45,10 +45,12 @@ namespace StudentProject.Code.Screens
             AddObject(_wolf, 200, 800);
 
             _mummy = new Mummy();
-            AddObject(_mummy, 600, 900);
+            AddObject(_mummy, 1100, 900);
 
             _bat = new Bat();
-            AddObject(_bat, 1000, 300);
+            AddObject(_bat, 1050, 400);
+            /*AddObject(new Bat(), 1330, 330);
+            AddObject(new Bat(), 930, 600);*/
 
             _player = new Player();
             AddObject(_player, 70, 880);
@@ -81,7 +83,7 @@ namespace StudentProject.Code.Screens
             base.Update(deltaTime);
             // TODO: Add your Screen update code below here
 
-            SceneCamera();
+            //SceneCamera();
 
             if (_player.Death() == true)
             {
@@ -139,38 +141,138 @@ namespace StudentProject.Code.Screens
             AddObject(new Floor(), 1095, 295);
             AddObject(new Floor(), 1095, 400);
 
-            AddObject(new Floor(), 1635, 493);
-            AddObject(new Floor(), 1635, 388);
-            AddObject(new Floor(), 1635, 283);
+            AddObject(new Floor(), 1635, 505);
+            AddObject(new Floor(), 1635, 400);
+            AddObject(new Floor(), 1635, 297);
             
             AddObject(new Floor1(), 1585, 80);
 
             AddObject(new Floor(), 1335, 598);
             AddObject(new Floor(), 1485, 598);
-            AddObject(new Floor(), 1635, 598);
-            AddObject(new Floor(), 1635, 703);
-            AddObject(new Floor(), 1635, 808);
-            AddObject(new Floor(), 1635, 913);
-            AddObject(new Floor(), 1485, 913);
-            AddObject(new Floor(), 1485, 808);
-            AddObject(new Floor(), 1335, 913);
-            AddObject(new Floor(), 1335, 808);
-            AddObject(new Floor(), 1185, 913);
-            AddObject(new Floor(), 1185, 808);
-            AddObject(new Floor(), 1035, 913);
-            AddObject(new Floor(), 1035, 808);
-            AddObject(new Floor(), 885, 913);
-            AddObject(new Floor(), 885, 808);
+            AddObject(new Floor(), 1635, 610);
+            AddObject(new Floor(), 1635, 715);
+            AddObject(new Floor(), 1635, 820);
+            AddObject(new Floor(), 1635, 925);
+            AddObject(new Floor(), 1485, 925);
+            AddObject(new Floor(), 1485, 820);
+            AddObject(new Floor(), 1335, 925);
+            AddObject(new Floor(), 1335, 820);
+            AddObject(new Floor(), 1185, 925);
+            AddObject(new Floor(), 1185, 820);
+            AddObject(new Floor(), 1035, 925);
+            AddObject(new Floor(), 1035, 820);
+            AddObject(new Floor(), 885, 925);
+            AddObject(new Floor(), 885, 820);
 
+            /*AddObject(new Wall(), 1167, 742);
+            AddObject(new Wall(), 1167, 790);
+            AddObject(new Wall(), 1191, 742);
+            AddObject(new Wall(), 1191, 790);
+            AddObject(new Wall(), 1215, 742);
+            AddObject(new Wall(), 1215, 790);*/
+
+            AddObject(new Wall_Tint1(), 1239, 190);
+            AddObject(new Wall_Tint1(), 1239, 220);
+            /*AddObject(new Wall(), 1239, 742);
+            AddObject(new Wall(), 1239, 790);*/
+            AddObject(new Wall(), 1263, 190);
+            AddObject(new Wall(), 1263, 220);
+
+            /*AddObject(new Wall(), 711, 790);
+            AddObject(new Wall(), 711, 742);
+            AddObject(new Wall(), 759, 790);
+            AddObject(new Wall(), 759, 742);*/
+            /*AddObject(new Wall(), 807, 790);
+            AddObject(new Wall(), 807, 742);*/
+
+
+            AddObject(new Wall(), 885, 790);
+            AddObject(new Wall(), 885, 742);
+            AddObject(new Wall(), 903, 790);
+            AddObject(new Wall(), 903, 742);
+            AddObject(new Wall(), 951, 790);
+            AddObject(new Wall(), 951, 742);
+            AddObject(new Wall(), 999, 790);
+            AddObject(new Wall(), 999, 742);
+            AddObject(new Wall(), 1047, 790);
+            AddObject(new Wall(), 1047, 742);
+            AddObject(new Wall(), 1095, 790);
+            AddObject(new Wall(), 1095, 742);
+            AddObject(new Wall(), 1143, 790);
+            AddObject(new Wall(), 1143, 742);
+            AddObject(new Wall(), 1191, 790);
+            AddObject(new Wall(), 1191, 742);
+            AddObject(new Wall(), 1239, 790);
+            AddObject(new Wall(), 1239, 742);
+
+            AddObject(new Wall(), 1287, 742);
+            AddObject(new Wall(), 1287, 790);
+            AddObject(new Wall(), 1287, 190);
+            AddObject(new Wall(), 1287, 220);
+            AddObject(new Wall(), 1335, 190);
+            AddObject(new Wall(), 1335, 220);
             AddObject(new Wall(), 1335, 502);
             AddObject(new Wall(), 1335, 550);
+            AddObject(new Wall(), 1335, 742);
+            AddObject(new Wall(), 1335, 790);
+            AddObject(new Wall(), 1383, 742);
+            AddObject(new Wall(), 1383, 790);
+            AddObject(new Wall(), 1383, 190);
+            AddObject(new Wall(), 1383, 220);
             AddObject(new Wall(), 1383, 502);
             AddObject(new Wall(), 1383, 550);
+            AddObject(new Wall(), 1431, 742);
+            AddObject(new Wall(), 1431, 790);
             AddObject(new Wall(), 1431, 502);
             AddObject(new Wall(), 1431, 550);
+            AddObject(new Wall(), 1431, 190);
+            AddObject(new Wall(), 1431, 220);
+            AddObject(new Wall(), 1479, 742);
+            AddObject(new Wall(), 1479, 790);
             AddObject(new Wall(), 1479, 502);
             AddObject(new Wall(), 1479, 550);
             AddObject(new Wall(), 1479, 454);
+            AddObject(new Wall(), 1479, 406);
+            AddObject(new Wall(), 1479, 358);
+            AddObject(new Wall(), 1479, 310);
+            AddObject(new Wall(), 1479, 262);
+            AddObject(new Wall(), 1479, 220);
+            AddObject(new Wall(), 1479, 190);
+            AddObject(new Wall_Tint1(), 1527, 502);
+            AddObject(new Wall_Tint1(), 1527, 454);
+            AddObject(new Wall_Tint2(), 1527, 406);
+            AddObject(new Wall_Tint2(), 1527, 358);
+            AddObject(new Wall_Tint1(), 1527, 310);
+            AddObject(new Wall(), 1527, 262);
+            AddObject(new Wall(), 1527, 220);
+            AddObject(new Wall(), 1527, 190);
+            AddObject(new Wall(), 1527, 550);
+            AddObject(new Wall(), 1527, 742);
+            AddObject(new Wall(), 1527, 790);
+            AddObject(new Wall(), 1575, 406);
+            AddObject(new Wall(), 1575, 358);
+            AddObject(new Wall(), 1575, 310);
+            AddObject(new Wall_Tint1(), 1575, 262);
+            AddObject(new Wall_Tint1(), 1575, 214);
+            AddObject(new Wall_Tint1(), 1575, 166);
+            AddObject(new Wall(), 1575, 454);
+            AddObject(new Wall(), 1575, 502);
+            AddObject(new Wall(), 1575, 550);
+            AddObject(new Wall(), 1575, 742);
+            AddObject(new Wall(), 1575, 790);
+            AddObject(new Wall_Tint1(), 1623, 454);
+            AddObject(new Wall_Tint1(), 1623, 406);
+            AddObject(new Wall_Tint1(), 1623, 358);
+            AddObject(new Wall_Tint1(), 1623, 310);
+            AddObject(new Wall_Tint1(), 1623, 502);
+            AddObject(new Wall_Tint1(), 1623, 550);
+            AddObject(new Wall_Tint1(), 1623, 694);
+            AddObject(new Wall_Tint1(), 1623, 742);
+            AddObject(new Wall_Tint1(), 1623, 790);
+
+            AddObject(new Wall(), 1479, 454);
+
+
 
             /*AddObject(new Wall(), -3, -5);
             AddObject(new Wall(), -3, 40);*/
@@ -256,6 +358,21 @@ namespace StudentProject.Code.Screens
                 AddObject(new Wall(), xPosition - 1, yPosition - 920);
                 AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 920);
 
+                /*AddObject(new Wall(), xPosition - 1, yPosition - 875);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 875);
+
+                AddObject(new Wall(), xPosition - 1, yPosition - 830);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 830);
+
+                AddObject(new Wall(), xPosition - 1, yPosition - 785);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 785);
+
+                AddObject(new Wall(), xPosition - 1, yPosition - 740);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 740);
+
+                AddObject(new Wall(), xPosition - 1, yPosition - 695);
+                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 695);*/
+
                 AddObject(new Wall_Tint3(), screenRightEdge - 1 - xPosition, yPosition - 1055);
                 AddObject(new Wall_Tint2(), screenRightEdge - 1 - xPosition, yPosition - 1010);
                 AddObject(new Wall_Tint1(), screenRightEdge - 1 - xPosition, yPosition - 965);
@@ -275,9 +392,26 @@ namespace StudentProject.Code.Screens
                 AddObject(new Wall_Tint1(), 1945, yposition - 50);
                 AddObject(new Wall_Tint2(), 1990, yposition - 50);
                 AddObject(new Wall_Tint3(), 2035, yposition - 50);
+
+                AddObject(new Wall(), 1852, yposition - 50);
+                AddObject(new Wall(), 1804, yposition - 50);
+                AddObject(new Wall_Tint1(), 1759, yposition - 50);
+
             }
+            for (int column = 0; column < numberOfWalls - 2; column++)
+            {
+                int yposition2 = column * (46 - gapBetweenWalls);
+                AddObject(new Wall(), 692, yposition2 + 185);
+                AddObject(new Wall(), 740, yposition2 + 185);
+                AddObject(new Wall(), 788, yposition2 + 185);
+                AddObject(new Wall(), 836, yposition2 + 185);
 
+                
+            }
+            for (int column = 0; column < numberOfWalls - 2; column++)
+            {
 
+            }
         }
 
         private void DoorCheck()

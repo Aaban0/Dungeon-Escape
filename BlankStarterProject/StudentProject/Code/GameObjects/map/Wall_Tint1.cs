@@ -11,7 +11,7 @@ namespace StudentProject.Code.GameObjects.map
         public Wall_Tint1()
         {
             SetSprite("_wall");
-            GetSprite().SetLayerDepth(6);
+            GetSprite().SetLayerDepth(8);
             GetSprite().SetScale(3f, 3.7f);
             GetSprite().SetTint(200, 200, 200);
         }

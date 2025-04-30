@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\screens\\myworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall_tint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\map\\wall_tint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall_tint2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\map\\wall_tint2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall_tint3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\map\\wall_tint3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\potions\\keymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\potions\\keymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall_tint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\map\\wall_tint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall_tint3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|solutionrelative:studentproject\\code\\gameobjects\\map\\wall_tint3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAF7A247-639E-4ED6-9923-E7F81A8AA696}|StudentProject\\StudentProject.csproj|c:\\users\\aaban\\documents\\github\\dungeon-escape\\blankstarterproject\\studentproject\\code\\gameobjects\\map\\wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,7 +64,7 @@
               "RelativeDocumentMoniker": "StudentProject\\Code\\Screens\\MyWorld.cs",
               "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\Screens\\MyWorld.cs",
               "RelativeToolTip": "StudentProject\\Code\\Screens\\MyWorld.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAADwv9UAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T08:41:04.922Z",
               "IsPinned": true,
@@ -64,7 +72,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "KeyManager.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Potions\\KeyManager.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Potions\\KeyManager.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Potions\\KeyManager.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Potions\\KeyManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:54:57.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Key.cs",
+              "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Key.cs",
+              "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Key.cs",
+              "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Key.cs",
+              "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Key.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:54:50.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Wall_Tint3.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Wall_Tint3.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Wall_Tint3.cs",
@@ -72,12 +106,11 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\map\\Wall_Tint3.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T00:40:50.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T00:40:50.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Bat.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Enemies\\Bat.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Enemies\\Bat.cs",
@@ -85,25 +118,24 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Enemies\\Bat.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAEwCUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T00:34:13.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T00:34:13.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Wall_Tint1.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Wall_Tint1.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Wall_Tint1.cs",
               "ToolTip": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Wall_Tint1.cs",
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\map\\Wall_Tint1.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T16:55:17.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Wall.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Wall.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Wall.cs",
@@ -111,12 +143,11 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\map\\Wall.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:50:50.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T09:50:50.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Wall_Tint2.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Wall_Tint2.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Wall_Tint2.cs",
@@ -129,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\Player.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\Player.cs",
@@ -137,12 +168,11 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\Player.cs",
               "ViewState": "AgIAAN8AAAAAAAAAAAASwOoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T09:55:00.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T09:55:00.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Floor.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Floor.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Floor.cs",
@@ -150,12 +180,11 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\map\\Floor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T21:03:40.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T21:03:40.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Floor1.cs",
               "DocumentMoniker": "C:\\Users\\aaban\\Documents\\GitHub\\Dungeon-Escape\\BlankStarterProject\\StudentProject\\Code\\GameObjects\\map\\Floor1.cs",
               "RelativeDocumentMoniker": "StudentProject\\Code\\GameObjects\\map\\Floor1.cs",
@@ -163,8 +192,7 @@
               "RelativeToolTip": "StudentProject\\Code\\GameObjects\\map\\Floor1.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T16:37:29.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T16:37:29.733Z"
             }
           ]
         }
