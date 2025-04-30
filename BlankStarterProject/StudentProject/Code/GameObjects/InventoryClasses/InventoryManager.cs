@@ -37,10 +37,27 @@ namespace StudentProject.Code.GameObjects
 
             if (itemNum < CAPACITY)
             {
-                InventoryItems[itemNum] = item;
-                //currentItem++;
-                itemNum++;
-                added = true;
+                if (InventoryItems[itemNum] == null)
+                {
+                    InventoryItems[itemNum] = item;
+                    //currentItem++;
+                    itemNum++;
+                    added = true;
+                }
+                else
+                {
+                    for (int i = 0; i < InventoryItems.Length; i++)
+                    {
+                        if (InventoryItems[i] == null)
+                        {
+                            // gets position in for loop and increaes by 1
+                            itemNum = i + 1;
+                            InventoryItems[i] = item;
+                            added = true;
+                            break; // Exit the loop once the item is added
+                        }
+                    }
+                }
             }
 
             return added;
