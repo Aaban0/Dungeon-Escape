@@ -26,7 +26,7 @@ namespace StudentProject.Code.GameObjects
 
         public override void Update(float deltaTime)
         {
-            DoorCollison();
+            //DoorCollison();
         }
     }
 }

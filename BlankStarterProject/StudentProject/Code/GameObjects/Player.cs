@@ -295,7 +295,7 @@ namespace StudentProject.Code.GameObjects
 
         private void PlayerCollision()
         {
-            Enemy enemy = (Enemy)GetOneObjectAtOffset<Enemy>(0, 0);
+            Enemy enemy = (Enemy)GetOneObjectAtOffset<Enemy>(-25, -25);
 
             if (enemy != null)
             {
