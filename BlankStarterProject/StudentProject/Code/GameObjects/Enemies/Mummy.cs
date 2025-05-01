@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace StudentProject.Code.GameObjects
 {
+    //Inherits from Enemy 
     internal class Mummy : Enemy
     {
+        //check for if the sprite is flipped
         public bool _flip { get; set; }
 
         public Mummy()
         {
+            //sets the sprite and animation
+            //sets the order in layer 
+            //sets the bounds of the object
             SetSprite("mummy", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             GetAnimatedSprite().StartAnimation(1);
             GetSprite().SetLayerDepth(4);
@@ -21,11 +26,15 @@ namespace StudentProject.Code.GameObjects
             SetVelocity(3.0f, 0);
             _flip = false;
         }
-
+        //Overloaded constructor for the mummy
         public Mummy(int health, bool newFlip) : base(health)
         {
             SetSprite("mummy", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             GetAnimatedSprite().StartAnimation(1);
+            GetSprite().SetLayerDepth(4);
+            SetBounds(100, 100);
+
+            SetVelocity(3.0f, 0);
 
             _flip = newFlip;
         }
@@ -37,6 +46,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
+            //if the mummy touches a wall, the velocity is flipped
             if (IsTouching<Wall>())
             {
                 SetVelocity(GetVelocity().X * -1, GetVelocity().Y);
@@ -48,6 +58,10 @@ namespace StudentProject.Code.GameObjects
             base.Movement();
 
             CheckCollisions();
+
+            //if the mummy touches a wall
+            //it checks of the mummy is flipped and acts depending on the variable
+            //positions reverted and animation changed 
 
             if (/*IsTouching<Wall_Left>() || */IsTouching<Wall>() && _flip == false)
             {

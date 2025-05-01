@@ -8,12 +8,23 @@ namespace StudentProject.Code.GameObjects
 {
     internal class InventoryManager : GameObject
     {
+        /// <summary>
+        /// 
+        /// Inventory Manager allows for items to be stored for the player to be used later 
+        /// The Inventroy Manager uses and array to store its items 
+        /// When items are removed the algorithm finds an empty array index to store any new items picked up.
+        /// 
+        /// </summary>
+        
         public int itemNum { get; set; }
         public InventoryItem[] InventoryItems { get; set; }
 
         public int currentItem {  get; set; }
         private const int CAPACITY = 4;
 
+        // Inventory Manager constructor creates an array of items and 
+        // deals with initialisation of the variables needed to track the
+        // inventory
         public InventoryManager()
         {
             currentItem = 0;
@@ -31,12 +42,15 @@ namespace StudentProject.Code.GameObjects
             
         }
 
+        //Method for addings in items to inventory 
         public bool AddItem(InventoryItem item)
         {
             bool added = false;
 
+            //checks if there is space in the array
             if (itemNum < CAPACITY)
             {
+                //adds an item if there is space 
                 if (InventoryItems[itemNum] == null)
                 {
                     InventoryItems[itemNum] = item;
@@ -46,8 +60,10 @@ namespace StudentProject.Code.GameObjects
                 }
                 else
                 {
+                    //loops for the length of the array
                     for (int i = 0; i < InventoryItems.Length; i++)
                     {
+                        //if there is a space free after an item has been used 
                         if (InventoryItems[i] == null)
                         {
                             // gets position in for loop and increaes by 1
@@ -63,6 +79,9 @@ namespace StudentProject.Code.GameObjects
             return added;
         }
 
+        // Item removed from the inventory by reference
+        // If the item passed in is the same as an item in the inventory
+        // Item is removed and it's space in array set to null
         public bool RemoveItem(InventoryItem item)
         {
             bool removed = false;
@@ -79,35 +98,5 @@ namespace StudentProject.Code.GameObjects
             }
             return removed;
         }
-
-        public InventoryItem GetItem2()
-        {
-            /*for (int i = 0; i < InventoryItems.Length; i++)
-            {
-                if (InventoryItems.Length > 1)
-                {
-                    InventoryItems[i] = null;
-                    currentItem = 1;
-                }
-            }*/
-            return InventoryItems[currentItem];
-        }
-
-        // Get the previous item in the inventory
-        public InventoryItem GetPreviousItem()
-        {
-            currentItem--;
-
-            if (currentItem < 0)
-                currentItem = - 1;
-
-            return InventoryItems[currentItem];
-        }
-
-        public InventoryItem TakeItem(int itemIndex)
-        {
-            return InventoryItems[itemIndex];
-        }
-
     }
 }

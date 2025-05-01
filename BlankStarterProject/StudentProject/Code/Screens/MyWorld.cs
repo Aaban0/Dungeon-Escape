@@ -5,6 +5,8 @@ namespace StudentProject.Code.Screens
 {
     public class MyWorld : Screen
     {
+        //variables for the screen
+
         private Player _player;
 
         private Wolf _wolf;
@@ -35,7 +37,8 @@ namespace StudentProject.Code.Screens
         {
             base.Start(core);
             // TODO: Add your Screen start code below here
-            //SetBackground("tempBackground", BackgroundType.FullScroll);
+
+            //adds all the game objects into the scene
 
             inventoryManager = new InventoryManager();
             AddObject(inventoryManager, 1550, 50);
@@ -67,36 +70,42 @@ namespace StudentProject.Code.Screens
             _door = new Door();
             AddObject(_door, 900, 900);
 
-            _wolf = new Wolf();
+            //uses overloaded constructor for the wolf
+            _wolf = new Wolf(1, false);
             AddObject(_wolf, 150, 400);
             AddObject(new Wolf(), 1680, 700);
 
-            _mummy = new Mummy();
+            //uses overloaded constructor for the mummy
+            _mummy = new Mummy(1, false);
             AddObject(_mummy, 1100, 900);
-            AddObject(new Mummy(), 550, 105);
+            AddObject(new Mummy(1, false), 550, 105);
 
-            _bat = new Bat();
+            //uses overloaded constructor for the bat
+            _bat = new Bat(1, 5);
             AddObject(_bat, 1050, 400);
-            AddObject(new Bat(), 1330, 330);
-            AddObject(new Bat(), 930, 600);
+            AddObject(new Bat(1, 5), 1330, 330);
+            AddObject(new Bat(1, 5), 930, 600);
 
             _player = new Player();
             AddObject(_player, 70, 880);
 
+            //uses overloaded constructor for health potion
             _potion2 = new Potion("Health Potion", 1, 0);
             AddObject(_potion2, 60, 500);
 
+            //uses overloaded constructor for health potion
             _potion = new Potion("Health Potion", 1, 0);
             AddObject(_potion, 1690, 700);
 
-            _mPotion = new MegaPotion("Health Potion", 2, 0);
+            //uses overloaded constructor for mega potion
+            _mPotion = new MegaPotion("Mega Potion", 2, 0);
             AddObject(_mPotion, 895, 670);
 
+            //uses overloaded constructor for poison potion
             _pPotion = new PoisonPotion("Poison Potion", 0, 1);
             AddObject(_pPotion, 750, 115);
 
             _key = new Key();
-            //AddObject(_key, 800, 950);
             AddObject(_key, 1700, 120);
 
             _health = new Health();
@@ -113,25 +122,34 @@ namespace StudentProject.Code.Screens
             base.Update(deltaTime);
             // TODO: Add your Screen update code below here
 
+            //calls the camera method
             SceneCamera();
 
+            //respawns player after death
             if (_player.Death() == true)
             {
                 _player.SetPosition(70, 880);
             }
 
+            //players health updates 
             _health.SetHealth(_player.Lives());
 
+            //calls door check method 
             DoorCheck();
         }
 
         private void SceneCamera()
         {
+            //position is set to the players X and Y coordinates
             _position = new Vector2(_player.GetX(), _player.GetY());
 
+            //camera looks at the players position
             Camera.Instance.LookAt(_position);
-            Camera.Instance.Zoom = 2f;
+            Camera.Instance.Zoom = 2.3f;
         }
+
+        //This method builds the walls, floor and all scene elements 
+        //The reason for its size is becasue each object was added manually 
 
         private void BuildWalls()
         {
@@ -374,6 +392,7 @@ namespace StudentProject.Code.Screens
             AddObject(new Wall_Tint2(), 1990, 1075);
             AddObject(new Wall_Tint3(), 1900, 1163);
 
+            //these for loops are used throughout the scene
             // Place each wall halfway down the screen
             int yPosition = (int)Settings.ScreenDimensions.X / 2;
 
@@ -388,24 +407,20 @@ namespace StudentProject.Code.Screens
 
             for (int column = 0; column < numberOfWalls; column++)
             {
-                // The Wall's sprite is 64px wide, so move each new Wall by 64 before placing it in the world
+                // The Wall's sprite is 47px wide, so move each new Wall by 47 before placing it in the world
                 int xPosition = column * (47 + gapBetweenWalls);
 
-                // Place a Wall object coming in from the left
+                // Place a Wall object coming in from the left and includes the tinted walls at the back 
                 AddObject(new Wall(), xPosition, yPosition + 70);
                 AddObject(new Wall_Tint1(), xPosition, yPosition + 114);
                 AddObject(new Wall_Tint2(), xPosition, yPosition + 158);
                 AddObject(new Wall_Tint3(), xPosition, yPosition + 202);
 
-                // Place a Wall object coming in from the right
+                // Place a Wall object coming in from the right and includes the tinted walls at the back 
                 AddObject(new Wall(), screenRightEdge - xPosition, yPosition + 70);
                 AddObject(new Wall_Tint1(), screenRightEdge - xPosition, yPosition + 114);
                 AddObject(new Wall_Tint2(), screenRightEdge - xPosition, yPosition + 158);
                 AddObject(new Wall_Tint3(), screenRightEdge - xPosition, yPosition + 202);
-
-
-                //places walls on the top of the screen
-
 
 
                 AddObject(new Wall_Tint3(), xPosition - 1, yPosition - 1055);
@@ -415,21 +430,6 @@ namespace StudentProject.Code.Screens
 
                 AddObject(new Wall(), xPosition - 1, yPosition - 920);
                 AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 920);
-
-                /*AddObject(new Wall(), xPosition - 1, yPosition - 875);
-                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 875);
-
-                AddObject(new Wall(), xPosition - 1, yPosition - 830);
-                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 830);
-
-                AddObject(new Wall(), xPosition - 1, yPosition - 785);
-                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 785);
-
-                AddObject(new Wall(), xPosition - 1, yPosition - 740);
-                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 740);
-
-                AddObject(new Wall(), xPosition - 1, yPosition - 695);
-                AddObject(new Wall(), screenRightEdge - 1 - xPosition, yPosition - 695);*/
 
                 AddObject(new Wall_Tint3(), screenRightEdge - 1 - xPosition, yPosition - 1055);
                 AddObject(new Wall_Tint2(), screenRightEdge - 1 - xPosition, yPosition - 1010);
@@ -489,7 +489,6 @@ namespace StudentProject.Code.Screens
                 AddObject(new Wall_Tint1(), 404, yposition3 + 190);
 
                 AddObject(new Wall_Tint1(), 356, yposition3 + 190);
-                //AddObject(new Wall_Tint1(), 356, yposition3 + 190);
             }
 
             for (int column = 0; column < numberOfWalls - 10; column++)
@@ -521,6 +520,9 @@ namespace StudentProject.Code.Screens
             AddObject(new Wall_Tint1(), 205, 888);
         }
 
+        //method checks if the player is colliding with the door, if they pressed enter while having the key
+        //the door changes to being opened
+        //screen transitioned to the win screen 
         private void DoorCheck()
         {
             if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() == 1)

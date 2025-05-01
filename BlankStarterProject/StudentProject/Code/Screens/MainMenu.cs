@@ -9,6 +9,8 @@ namespace StudentProject.Code.Screens
 {
     internal class MainMenu : Screen
     {
+        //variables required for the main menu 
+
         private Text _title;
         private Text _enter;
         private Text _exit;
@@ -26,7 +28,7 @@ namespace StudentProject.Code.Screens
             //Background colour is changed
             Settings.BackgroundFill = Colour.Black;
 
-            //sets manu backgrund and sets audio 
+            //sets menu audio 
             AudioManager.Instance.StopBGM();
             AudioManager.Instance.PlayBGM("MainMenu");
 
@@ -35,16 +37,19 @@ namespace StudentProject.Code.Screens
             _title = new Text("Dungeon's Grip", Colour.White);
             AddText(_title, 475, 200);
             _title.SetScale(2.5f);
+            _title.SetFont("BKANT.TTF");
 
             //sets a text on screen with the colour white
             //also has changed the font type
             _enter = new Text("Press Enter to Begin", Colour.White);
             AddText(_enter, 680, 830);
+            _enter.SetFont("BKANT.TTF");
 
             //sets a text on screen with the colour white
             //also has changed the font type
             _exit = new Text("  Press Esc To Exit", Colour.White);
             AddText(_exit, 680, 900);
+            _exit.SetFont("BKANT.TTF");
 
             Transition.Instance.EndTransition();
         }
@@ -62,14 +67,13 @@ namespace StudentProject.Code.Screens
             }
             else if (GameInput.IsKeyPressed("Esc"))
             {
-                //if esc is pressed player transitioned to new screen
-                //a sound clip is also played when enter is pressed
+                //if esc is pressed player exits the game
                 AudioManager.Instance.PlaySFX("click");
                 Core.EndGame();
                 Core.CloseGame();
             }
 
-
+            //colour is changed to red
             //the text is initially set to transparent
             //timer is used and if it is not equal to 255 then
             //transparency goes up untill reaches 255
@@ -84,6 +88,7 @@ namespace StudentProject.Code.Screens
                 }
             }
 
+            //colour is changed to red
             //if _onScreen = true then this next text starts the same loop
             //the text is initially set to transparent
             //timer is used and if it is not equal to 255 then
@@ -99,6 +104,7 @@ namespace StudentProject.Code.Screens
                 }
             }
 
+            //colour is changed to red
             //if _onScreen2 = true then this next text starts the same loop
             //the text is initially set to transparent
             //timer is used and if it is not equal to 255 then

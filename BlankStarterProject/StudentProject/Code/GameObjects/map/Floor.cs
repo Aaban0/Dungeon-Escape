@@ -8,6 +8,9 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Floor : GameObject
     {
+        //sets the floor sprite, the scale and the order in layer
+        //also sets bounds to prevent it from dissapering while on screen, becasue the scale is increased
+
         public Floor()
         {
             SetSprite("floor");

@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class door : GameObject
     {
+        //initial sprite for the locked door
         public door()
         {
             SetSprite("door locked");

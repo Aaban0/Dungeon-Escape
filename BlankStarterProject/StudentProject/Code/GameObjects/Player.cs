@@ -10,6 +10,7 @@ namespace StudentProject.Code.GameObjects
 {
     internal class Player : GameObject
     {
+        //variables for the player
         public int _lives {  get; set; }
         public bool death {  get; set; }
         private int _speed { get; set; }
@@ -25,13 +26,16 @@ namespace StudentProject.Code.GameObjects
 
         public Player()
         {
+            //sets positions to null
             inventoryManager = new InventoryManager();
             currentItem1 = null;
             currentItem2 = null;
             currentItem3 = null;
             currentItem4 = null;
 
-            //Sets up players inital sprite
+            //Sets up players inital sprite and animation
+            //sets the order in layer and the scale
+            //sets the bounds becasue the scale is changed 
             SetSprite("Priest", 32, 32, 0.1f, new int[] { 10, 10, 10, 10, 10 }, LoopType.Bounce);
             GetSprite().SetScale(2, 2);
             GetSprite().SetLayerDepth(4);
@@ -60,6 +64,8 @@ namespace StudentProject.Code.GameObjects
         }
         private void ItemCheck()
         {
+            //if player is close to an item and presses q
+            //player can pick up the item
             InventoryItem inventoryItem = (InventoryItem)GetOneIntersectingObject<InventoryItem>();
             if (inventoryItem is InventoryItem)
             {
@@ -87,6 +93,7 @@ namespace StudentProject.Code.GameObjects
                     inventoryManager.InventoryItems[0] = currentItem1;
                 }*/
 
+                //sets the items to the position in the arrays (so individual key is mapped) - this is later in the scirpt
                 for (int i = 0; i < inventoryManager.InventoryItems.Length; i++)
                 {
                     if (inventoryManager.InventoryItems[0] == item)
@@ -110,6 +117,8 @@ namespace StudentProject.Code.GameObjects
                 /*currentItem1 = item;
                 currentItem1 = inventoryManager.InventoryItems[0];*/
 
+                //sets the position of the items in the world once collected
+
                 if (inventoryManager.itemNum > 1 /*&& currentItem != null*/)
                 {
                     item.SetPosition(new Vector2(1557.5f + 75, 57));
@@ -124,6 +133,19 @@ namespace StudentProject.Code.GameObjects
                 }
             }
         }
+
+        /// <summary>
+        /// 
+        /// this manages the item use process
+        /// 
+        /// first adds the health points or deducts the damage points depending on the potion.
+        /// Then sets the current position of the item in the array to null. 
+        /// Then sets the item number in the array. It removes the item in the array and sets it's world position to false.
+        /// finally sets the potion to innactive and plays an audio clip of using the potion 
+        /// 
+        /// This process is repeated for all elements in the array.
+        /// 
+        /// </summary>
 
         public void UseItem1()
         {
@@ -185,6 +207,16 @@ namespace StudentProject.Code.GameObjects
             AudioManager.Instance.PlaySFX("UsePotion");
         }
 
+        /// <summary>
+        /// 
+        /// Method is to attack the enemies in the game.
+        /// Checks if the player is pressing e and sets it's sprite and animation
+        /// sets the scale, bounds, order in layer and changes the animation
+        /// 
+        /// Also checks if the player presses e while close to and enemy and removes the enemy if hit
+        /// 
+        /// </summary>
+
         private void EnemyAttack()
         {
             if (GameInput.IsKeyPressed("e"))
@@ -224,7 +256,7 @@ namespace StudentProject.Code.GameObjects
             Door door = (Door)GetOneIntersectingObject<Door>();
             if (door != null)
             {
-                //if player is touching door then variable set to true
+                //if player is touching door then variable set to true and is able to go through the door
                 _doorCollision = true;
             }
         }
@@ -234,8 +266,7 @@ namespace StudentProject.Code.GameObjects
             GameObject key = GetOneIntersectingObject<Key>();
             if (key != null)
             {
-                //if player touches key then keys = +1 and key gets removed
-                //GetScreen().RemoveObject(key);
+                //if player touches key - keys = 1, key gets moved and can be used
                 AudioManager.Instance.PlaySFX("KeyPickUp");
                 key.GetSprite().SetInWorldSpace(false);
                 key.GetSprite().SetScale(1.7f, 1.7f);
@@ -246,11 +277,21 @@ namespace StudentProject.Code.GameObjects
 
         private void CheckForObstacles()
         {
+            //if player is touching wall 
+            //position is reverted 
             if (IsTouching<Wall>())
             {
                 RevertPosition();
             }
         }
+
+        /// <summary>
+        /// 
+        /// Method check is the player has been hit by an enemy. 
+        /// If his then the player gets moved to spawn and the player looses a life
+        /// Once lives reach 0, the screen gets changed to the death screen
+        /// 
+        /// </summary>
 
         private void PlayerCollision()
         {
@@ -274,11 +315,26 @@ namespace StudentProject.Code.GameObjects
             }
         }
 
+        /// <summary>
+        /// 
+        /// This method handles input and the inputs animation 
+        /// 
+        /// First it checks for the number keys 1,2,3,4
+        /// Checks if pressed and there is an item associated in the inventory
+        /// Player then uses the item if there is an item to be used
+        /// 
+        /// Later on it checks for the players inputs for movment. 
+        /// Once the player inputs any WASD key, the player is able to move in the game world
+        /// Animation is also associated with a WASD key press
+        /// Order in layer is set and checks for obstacles while player is moving
+        /// 
+        /// </summary>
+
         private void HandleInputs()
         {
             if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D1))
             {
-                //prevents program break if there are no items
+                // if statment prevents program break if there are no items
                 if (currentItem1 is InventoryItem || currentItem1 != null)
                 {
                     UseItem1();
@@ -287,7 +343,7 @@ namespace StudentProject.Code.GameObjects
             }
             if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D2))
             {
-                //prevents program break if there are no items
+                // if statment prevents program break if there are no items
                 if (currentItem2 is InventoryItem || currentItem2 != null)
                 {
                     UseItem2();
@@ -295,7 +351,7 @@ namespace StudentProject.Code.GameObjects
             }
             if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D3))
             {
-                //prevents program break if there are no items
+                // if statment prevents program break if there are no items
                 if (currentItem3 is InventoryItem || currentItem3 != null)
                 {
                     UseItem3();
@@ -303,7 +359,7 @@ namespace StudentProject.Code.GameObjects
             }
             if (GameInput.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.D4))
             {
-                //prevents program break if there are no items
+                // if statment prevents program break if there are no items
                 if (currentItem4 is InventoryItem || currentItem4 != null)
                 {
                     UseItem4();
@@ -421,6 +477,8 @@ namespace StudentProject.Code.GameObjects
                 SetBounds(100, 100);
             }
         }
+
+        //returns variables to be used in other classes 
 
         public bool Death()
         {

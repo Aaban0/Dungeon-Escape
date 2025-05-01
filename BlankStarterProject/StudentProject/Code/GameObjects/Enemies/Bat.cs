@@ -7,23 +7,29 @@ using System.Threading.Tasks;
 
 namespace StudentProject.Code.GameObjects
 {
+    //Inherits from Enemy 
     internal class Bat : Enemy
     {
+        //variable for bat speed
         public int _speed {  get; set; }
 
         public Bat()
         {
-            //set sprite 
+            //set sprite, velocity and the order in layer
             SetSprite("bat", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             SetVelocity(4.0f, 0);
             GetSprite().SetLayerDepth(6);
 
+            //speed is also set
             _speed = 5;
         }
 
         public Bat(int health, int speed) : base(health)
         {
-            SetSprite("werewolf", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
+            //overloaded constructer for bat
+            SetSprite("bat", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
+            SetVelocity(4.0f, 0);
+            GetSprite().SetLayerDepth(6);
 
             _speed = speed;
         }
@@ -35,6 +41,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
+            //if bat touches wall then changes positions
             if (IsTouching<Wall>())
             {
                 RevertPosition();

@@ -10,6 +10,8 @@ namespace StudentProject.Code.GameObjects.map
     {
         public Wall_Tint1()
         {
+            //sets the sprite and the scale 
+            //sets the tint and also the order in layer
             SetSprite("_wall");
             GetSprite().SetLayerDepth(8);
             GetSprite().SetScale(3f, 3.7f);

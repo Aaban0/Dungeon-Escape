@@ -10,7 +10,7 @@ namespace StudentProject.Code.GameObjects
     {
         public Door()
         {
-            //Sets sprite
+            //Sets sprite and scale
             SetSprite("door locked");
             GetSprite().SetScale(5, 5);
         }

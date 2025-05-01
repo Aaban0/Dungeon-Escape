@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace StudentProject.Code.GameObjects
 {
+    //Inherits from Enemy
     internal class Wolf : Enemy
     {
+        //variable for if sprite has flipped
         public bool _flip {  get; set; }
 
         public Wolf()
         {
+            //sets the sprite and animations 
+            //sets scale and the order in layer
+            //sets bounds becasue the scale has increases and sets the velocity
             SetSprite("werewolf", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             GetSprite().SetScale(1.5f, 1.5f);
             GetSprite().SetLayerDepth(4);
@@ -23,8 +28,14 @@ namespace StudentProject.Code.GameObjects
 
         public Wolf(int health, bool newFlip) : base(health)
         {
-            //Health = health;
+            //overloaded constructor for the wolf
+            Health = health;
             SetSprite("werewolf", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
+            GetSprite().SetScale(1.5f, 1.5f);
+            GetSprite().SetLayerDepth(4);
+            SetBounds(100, 100);
+            SetVelocity(0, -3.0f);
+
             _flip = newFlip;
         }
 
@@ -35,6 +46,7 @@ namespace StudentProject.Code.GameObjects
 
         protected override void CheckCollisions()
         {
+            //if the wolf touches a wall, the velocity is flipped
             if (IsTouching<Wall>())
             {
                 SetVelocity(GetVelocity().X, GetVelocity().Y * -1);
@@ -46,6 +58,9 @@ namespace StudentProject.Code.GameObjects
             base.Movement();
 
             CheckCollisions();
+            //if the wolf touches a wall
+            //it checks of the wolf is flipped and acts depending on the variable
+            //positions reverted and animation changed 
 
             if (IsTouching<Wall>() && _flip == false)
             {

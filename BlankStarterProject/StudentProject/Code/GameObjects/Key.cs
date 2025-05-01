@@ -10,7 +10,7 @@ namespace StudentProject.Code.GameObjects
     {
         public Key()
         {
-            //Sets Sprite
+            //Sets Sprite and order in layer
             SetSprite("Key");
             GetSprite().SetLayerDepth(1);
         }

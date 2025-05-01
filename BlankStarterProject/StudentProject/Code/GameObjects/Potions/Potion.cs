@@ -10,6 +10,8 @@ namespace StudentProject.Code.GameObjects
     {
         public Potion() : base()
         {
+            //constructor sets the health points, sprite and order in layer
+
             HealPoints = 1;
 
             SetSprite("potion_2_ruby");
@@ -18,6 +20,7 @@ namespace StudentProject.Code.GameObjects
 
         public Potion(string name, int healPoints, int damagePoints)
         {
+            //overloaded constructor for the potion 
             HealPoints = healPoints;
             SetSprite("potion_2_ruby");
         }
