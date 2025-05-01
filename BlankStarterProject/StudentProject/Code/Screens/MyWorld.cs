@@ -138,6 +138,7 @@ namespace StudentProject.Code.Screens
             var floor = new Floor1();
             AddObject(floor, -1, 189);
             floor.GetSprite().SetScale(8.15f, 8.15f);
+            floor.SetBounds(1000, 1000);
 
             AddObject(new Floor1(), 0, 790);
             AddObject(new Floor1(), 855, 265);
