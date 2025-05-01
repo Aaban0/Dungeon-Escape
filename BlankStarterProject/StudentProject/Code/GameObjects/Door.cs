@@ -16,9 +16,9 @@ namespace StudentProject.Code.GameObjects
         }
         private void DoorCollison()
         {
-            //if player is touching the door it calls playerVer.DoorCollision
+            //if player is touching the door it calls player.DoorCollision
             Player player = (Player)GetOneIntersectingObject<Player>();
-            if (player == null)
+            if (player != null)
             {
                 player.DoorCollision();
             }
@@ -26,7 +26,7 @@ namespace StudentProject.Code.GameObjects
 
         public override void Update(float deltaTime)
         {
-
+            DoorCollison();
         }
     }
 }
