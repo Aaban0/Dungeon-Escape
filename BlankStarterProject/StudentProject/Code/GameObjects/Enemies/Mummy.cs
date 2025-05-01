@@ -21,7 +21,7 @@ namespace StudentProject.Code.GameObjects
             SetSprite("mummy", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             GetAnimatedSprite().StartAnimation(1);
             GetSprite().SetLayerDepth(4);
-            SetBounds(100, 100);
+            SetBounds(10, 10);
 
             SetVelocity(3.0f, 0);
             _flip = false;

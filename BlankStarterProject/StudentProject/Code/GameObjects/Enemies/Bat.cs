@@ -18,7 +18,7 @@ namespace StudentProject.Code.GameObjects
             //set sprite, velocity and the order in layer
             SetSprite("bat", 48, 64, 0.1f, new int[] { 3, 3, 3, 3 });
             SetVelocity(4.0f, 0);
-            GetSprite().SetLayerDepth(6);
+            GetSprite().SetLayerDepth(5);
 
             //speed is also set
             _speed = 5;

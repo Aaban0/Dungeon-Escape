@@ -240,7 +240,7 @@ namespace StudentProject.Code.GameObjects
             }
 
             Enemy enemy = (Enemy)GetOneIntersectingObject<Enemy>();
-            if (enemy is Enemy)
+            if (enemy != null)
             {
                 if (GameInput.IsKeyPressed("e"))
                 {

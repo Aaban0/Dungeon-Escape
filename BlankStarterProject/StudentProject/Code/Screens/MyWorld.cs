@@ -525,7 +525,7 @@ namespace StudentProject.Code.Screens
         //screen transitioned to the win screen 
         private void DoorCheck()
         {
-            if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() == 1)
+            if (_player.DoorCollision() == true && GameInput.IsKeyPressed("enter") && _player.GetKeys() >= 1)
             {
                 AudioManager.Instance.PlaySFX("DoorEnter");
                 _door.SetSprite("door unlocked");
