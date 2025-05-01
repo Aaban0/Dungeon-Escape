@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Edge_Outer : GameObject
     {
+        /*CLASS NOT USED*/
         public Edge_Outer()
         {
             SetSprite("edge outer");

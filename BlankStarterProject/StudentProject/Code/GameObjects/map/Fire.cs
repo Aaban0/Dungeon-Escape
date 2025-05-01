@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Fire : GameObject
     {
+        /*CLASS NOT USED*/
         public Fire()
         {
             SetSprite("fire");

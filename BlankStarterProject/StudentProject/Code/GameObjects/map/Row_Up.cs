@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Row_Up : GameObject
     {
+        /*CLASS NOT USED*/
         public Row_Up()
         {
             SetSprite("row up");

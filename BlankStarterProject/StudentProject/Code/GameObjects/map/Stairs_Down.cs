@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Stairs_Down : GameObject
     {
+        /*CLASS NOT USED*/
         public Stairs_Down()
         {
             SetSprite("stairs down");

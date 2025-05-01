@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Water_Start : GameObject
     {
+        /*CLASS NOT USED*/
         public Water_Start()
         {
             SetSprite("water start");

@@ -8,6 +8,7 @@ namespace StudentProject.Code.GameObjects.map
 {
     internal class Sewer2 :GameObject
     {
+        /*CLASS NOT USED*/
         public Sewer2()
         {
             SetSprite("sewer2");
